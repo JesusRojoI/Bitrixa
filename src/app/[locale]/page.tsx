@@ -1,4 +1,4 @@
-/*import HeroSection from '@/components/sections/HeroSection';
+import HeroSection from '@/components/sections/HeroSection';
 import AboutSection from '@/components/sections/AboutSection';
 import ServicesSection from '@/components/sections/ServicesSection';
 import ProductsSection from '@/components/sections/ProductsSection';
@@ -14,11 +14,4 @@ export default function Home() {
       <ContactSection />
     </main>
   );
-}
-  */
- import { redirect } from 'next/navigation';
-import { routing } from '@/i18n/routing';
-
-export default function RootPage() {
-  redirect(`/${routing.defaultLocale}`);
 }

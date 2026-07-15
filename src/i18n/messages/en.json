@@ -1,0 +1,473 @@
+{
+  "header": {
+    "organization": "The Organization",
+    "options": "Options",
+    "alternatives": "Alternatives",
+    "support": "Support",
+    "language": "ESP",
+    "callUs": "Call Us",
+    "phone": "+52 55 5682 4394"
+  },
+  "footer": {
+    "address": "Avenida Insurgentes Sur, Nº933, Int 102, Piso 1, Colonia Nápoles, Alcaldía Benito Juárez, C.P, 03810, CDMX",
+    "phone": "+52 55 5682 4394",
+    "email": "informacion@bitrixa.com.mx",
+    "company": "Company",
+    "home": "Home",
+    "organization": "The Organization",
+    "options": "Options",
+    "alternatives": "Alternatives",
+    "support": "Support",
+    "privacy": "Privacy Policy",
+    "terms": "Terms and Conditions",
+    "refunds": "Refund Policy",
+    "copyright": "Copyright © 2025, All Rights Reserved"
+  },
+  "hero": {
+  "title": "Scientific Innovation at the Service of Your Project",
+  "titleHighlight": "Scientific",
+  "description": "We combine cutting-edge technology with rigorous scientific knowledge to offer professional, technical and scientific services that drive the development and efficiency of your company.",
+  "cta": "See More"
+},
+  "about": {
+    "badge": "About Us",
+    "title": "Science and Technology in Action",
+    "description": "Bitrixa is born from a passion for innovation, precision and commitment to technical excellence. We are a company dedicated to providing professional, scientific and technical services with a comprehensive and personalized approach.",
+    "cta": "Learn More"
+  },
+  "services": {
+  "badge": "Designed for You",
+  "title": "Specialized Services",
+  "description": "We offer a complete ecosystem of scientific and technological services designed to boost your organization to the next level.",
+  "cta": "View All Details",
+  "items": [
+    {
+      "title": "Scientific Analysis and Consulting",
+      "description": "We provide a rigorous scientific approach to analyze and evaluate every aspect of your projects. Our team of experts designs and executes detailed studies including controlled experimentation, mathematical modeling, and advanced statistical analysis. This enables process validation, identification of improvement opportunities, and support for strategic decisions with reliable and well-founded data. Additionally, our consulting adapts to various sectors, ensuring every recommendation meets the highest scientific quality standards.",
+      "beneficios": [
+        "Accurate and comprehensible technical reports that facilitate strategic decision-making.",
+        "Validation of processes and products with scientific methodologies that minimize risks and errors.",
+        "Identification of new innovation opportunities based on concrete evidence.",
+        "Continuous support for adjustments and improvements based on real results."
+      ]
+    },
+    {
+      "title": "Regulatory and Technical Compliance Advisory",
+      "description": "Navigating the regulatory framework can be challenging for many companies. We offer expert guidance to ensure your operations, products, and services comply with all applicable technical and legal regulations in your sector. Our team analyzes current requirements, prepares documentation, and designs processes that minimize legal risks and facilitate audits and certifications, allowing you to focus on business growth and development with confidence.",
+      "beneficios": [
+        "Avoidance of penalties and legal issues arising from regulatory non-compliance.",
+        "Comprehensive advisory for preparation and presentation to certification bodies.",
+        "Design of internal processes that ensure permanent and updatable compliance.",
+        "Reduction of time and costs in audit and certification processes.",
+        "Improved perception and trust from clients, partners, and stakeholders."
+      ]
+    },
+    {
+      "title": "Specialized Technical Training",
+      "description": "Up-to-date knowledge is the engine of business success. Our training programs are designed to provide your team with the necessary skills to face technological and scientific challenges with confidence and efficiency. We offer theoretical-practical courses on the latest methodologies, tools, and regulations, adapting to the profile and needs of each organization. This translates into a more skilled, motivated workforce capable of directly contributing to company objectives.",
+      "beneficios": [
+        "Continuous education that keeps your team at the forefront of their specialty.",
+        "Development of key technical and scientific competencies to improve job performance.",
+        "Transfer of practical knowledge applicable in day-to-day operations.",
+        "Improved internal communication and collaborative work through modern methodologies.",
+        "Increased productivity and reduction of operational errors."
+      ]
+    },
+    {
+      "title": "Technical and Scientific Software Development",
+      "description": "We develop custom digital solutions for technical and scientific sectors, designing applications, platforms, and systems that facilitate the management, analysis, and simulation of complex data. Our work spans from software conception to implementation, with a strong focus on usability, security, and scalability. This allows companies to have tools that not only automate processes but also enhance in-depth analysis for better decision-making.",
+      "beneficios": [
+        "Custom software that responds to specific needs in the scientific and technical sector.",
+        "Automation of complex tasks that reduces operational burden and human errors.",
+        "System integration to optimize information flow and collaboration.",
+        "Advanced data analysis and visualization capabilities for strategic insights.",
+        "Technical support and continuous updates to keep the platform efficient and secure."
+      ]
+    },
+    {
+      "title": "Technological Development and Innovation",
+      "description": "In a rapidly advancing world, staying at the technological forefront is key. We design tailored solutions that transform your production and administrative processes through the implementation of advanced technological tools, from automation to artificial intelligence and real-time monitoring systems. Our approach is aimed at improving efficiency, reducing operational costs, and enhancing your company's adaptability to new challenges.",
+      "beneficios": [
+        "Substantial increase in operational efficiency through intelligent automation.",
+        "Reduction of costs and time associated with manual or traditional processes.",
+        "Implementation of flexible technologies that adapt to your business evolution.",
+        "Access to real-time information for agile and informed decision-making.",
+        "Increased competitiveness at national and international levels."
+      ]
+    },
+    {
+      "title": "Quality Management and Control",
+      "description": "Excellence in products and services is essential to stand out in increasingly demanding markets. We implement quality management and control systems that ensure each phase of production or service delivery complies with strict national and international standards. Our team conducts continuous audits, inspections, and tests to ensure conformity and promote continuous improvement, protecting the reputation and trust your clients place in your brand.",
+      "beneficios": [
+        "Significant reduction of errors, defects, and rework, saving valuable resources.",
+        "Guarantee of compliance with regulatory standards that facilitate entry into new markets.",
+        "Continuous improvements in processes and products that increase customer satisfaction and loyalty.",
+        "Strengthening of corporate image through recognized certifications.",
+        "Specialized training for teams in quality methodologies."
+      ]
+    }
+  ]
+},
+  "products": {
+  "badge": "Alternatives",
+  "title": "Solutions Tailored to You",
+  "description": "Discover our premium alternatives designed for companies seeking excellence, innovation and measurable results.",
+  "addToCart": "Add to Cart",
+  "viewDetails": "View More Details",
+  "cta": "View All Alternatives",
+  "price": "MXN + VAT",
+  "items": [
+    {
+      "name": "Innovative Product Development"
+    },
+    {
+      "name": "Comprehensive Digital Transformation"
+    },
+    {
+      "name": "Complete Technical Audit"
+    }
+  ]
+},
+  "contact": {
+    "badge": "Contact Us",
+    "title": "We Are Here to Help",
+    "description": "Tell us about your project and discover how we can boost your company with innovative scientific and technological solutions.",
+    "form": {
+      "title": "Write to Us",
+      "description": "At Bitrixa we value transparency, quality and commitment, ensuring that each service delivers real and measurable value to your company.",
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "message": "Message",
+      "namePlaceholder": "Your full name",
+      "phonePlaceholder": "+52 55 1234 5678",
+      "emailPlaceholder": "you@email.com",
+      "messagePlaceholder": "Tell us about your project or inquiry...",
+      "required": "Fields marked with * are required",
+      "characters": "characters",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message Sent!",
+      "successMessage": "We will contact you very soon.",
+      "privacy": "Your data is safe. We never share your information.",
+      "errors": {
+        "nameRequired": "Name is required",
+        "nameMin": "Name must have at least 3 characters",
+        "phoneRequired": "Phone is required",
+        "phoneInvalid": "Enter a valid phone number (8-15 digits)",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Enter a valid email",
+        "messageRequired": "Message is required",
+        "messageMin": "Message must have at least 10 characters"
+      }
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": "Address",
+      "email": "Email",
+      "phone": "Phone",
+      "hours": "Business Hours",
+      "hoursValue": "Monday to Friday: 9:00 - 18:00",
+      "saturday": "Saturday: 9:00 - 13:00",
+      "coverage": "Coverage Area: CDMX and Metropolitan Area"
+    }
+  },
+  "cart": {
+    "title": "Cart",
+    "empty": "Your cart is empty",
+    "emptyDescription": "Add products to get started",
+    "viewAlternatives": "View Alternatives",
+    "product": "Product",
+    "price": "Price",
+    "quantity": "Quantity",
+    "subtotal": "Subtotal",
+    "coupon": "Coupon Code",
+    "apply": "Apply",
+    "couponsAvailable": "Available Coupons:",
+    "summary": "Summary",
+    "iva": "VAT (16%)",
+    "discount": "Discount",
+    "total": "Total",
+    "checkout": "Proceed to Checkout",
+    "continueShopping": "← Continue Shopping",
+    "emptyCart": "Empty Cart",
+    "taxNote": "Taxes and shipping calculated at checkout"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "haveCoupon": "Have a coupon? Click here to enter your code",
+    "coupon": "Coupon:",
+    "addCoupon": "Add Coupon",
+    "couponApplied": "Coupon Applied",
+    "billing": "Billing Details",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "country": "Country/Region",
+    "street": "Street Address",
+    "streetPlaceholder": "House number and street name",
+    "colonia": "Neighborhood, Apartment, Suite, etc. (optional)",
+    "coloniaPlaceholder": "Neighborhood, Apartment, Suite, etc. (optional)",
+    "city": "City",
+    "state": "State",
+    "cp": "ZIP Code",
+    "phone": "Phone (optional)",
+    "email": "Email Address",
+    "additional": "Additional Information",
+    "additionalLabel": "Order Notes (optional)",
+    "additionalPlaceholder": "Additional order details, address references, etc.",
+    "order": "Your Order",
+    "payment": "PAYMENT INFORMATION",
+    "cardType": "Credit or Debit Card",
+    "cardName": "Cardholder Name",
+    "cardNamePlaceholder": "John Smith",
+    "cardNumber": "Card Number",
+    "cardExpiry": "Expiration Date",
+    "cardExpiryPlaceholder": "MM / YY",
+    "cvv": "CVV",
+    "cvvPlaceholder": "***",
+    "securePayment": "Secure payment processed by:",
+    "placeOrder": "Place Order",
+    "processing": "Processing Payment...",
+    "privacy": "Your personal data will be used to process your order, improve your experience on this website, and for other purposes described in our privacy policy."
+  },
+  "success": {
+    "title": "Purchase Successful!",
+    "thanks": "Thank you for your purchase",
+    "orderDetails": "Order Details",
+    "orderId": "Order ID",
+    "transactionId": "Transaction ID",
+    "date": "Date",
+    "card": "Card",
+    "address": "Shipping Address",
+    "products": "Products",
+    "quantity": "Quantity",
+    "paymentSummary": "Payment Summary",
+    "emailSent": "We have sent a confirmation email to",
+    "checkSpam": "Check your inbox and spam folder",
+    "backHome": "Back to Home",
+    "continueShopping": "Continue Shopping"
+  },
+  "organization": {
+    "title": "The Organization",
+    "breadcrumb": "Home",
+    "about": {
+      "badge": "About Us",
+      "title": "Science and Technology in Action",
+      "description1": "Our commitment is to transform complex data and processes into clear, efficient solutions adapted to your specific needs, whether in local or international projects.",
+      "description2": "From scientific analysis to technical consulting and technological development, we are the ideal partner for projects that require excellence, precision and measurable results.",
+      "description3": "Discover how science and technology come together at Bitrixa to accelerate your growth."
+    },
+    "value": {
+      "badge": "Our Value Proposition",
+      "title": "Our Pillars",
+      "description": "With a multidisciplinary team of experts, advanced technology and precise methodologies, we take your business to the next level of innovation and competitiveness.",
+      "commitment": "Our Commitment",
+      "commitmentContent": "To transform complex data and processes into clear, efficient solutions adapted to your specific needs, whether in local or international projects.",
+      "mission": "Our Mission",
+      "missionContent": "Our mission is to facilitate access to innovative solutions that integrate scientific rigor and technological advances to maximize the impact and efficiency of each project.",
+      "team": "Our Team of Experts",
+      "teamContent": "We have highly trained professionals in areas such as engineering, data analysis, technical consulting, technological development and scientific advisory, who work in synergy to offer you reliable and scalable results."
+    }
+  },
+  "email": {
+    "contact": {
+      "subject": "New Contact Message from {name}",
+      "adminTitle": "New Bitrixa Message",
+      "userSubject": "We Have Received Your Inquiry, {name}",
+      "userTitle": "Thank You for Contacting Us, {name}",
+      "userMessage": "We have received your message and our team will respond shortly.",
+      "summary": "Summary of your message:",
+      "regards": "Best regards,",
+      "team": "The Bitrixa Team"
+    },
+    "order": {
+      "adminSubject": "🛒 New Order: {orderId} - {customerName}",
+      "userSubject": "✅ Order Confirmation - {orderId}",
+      "userTitle": "Purchase Successful!",
+      "userThanks": "Thank you for your purchase, {customerName}.",
+      "orderDetails": "Order Details",
+      "shippingAddress": "Shipping Address",
+      "products": "Products",
+      "subtotal": "Subtotal",
+      "iva": "VAT (16%)",
+      "discount": "Discount",
+      "total": "Total Paid",
+      "questions": "If you have any questions about your order, contact us at",
+      "regards": "Best regards,",
+      "team": "The Bitrixa Team",
+      "newOrder": "New Order Received",
+      "client": "Client",
+      "phone": "Phone",
+      "address": "Address"
+    }
+  },
+  "productDetail": {
+  "items": [
+    {
+      "name": "Innovative Product Development",
+      "description": "Transform your ideas into tangible products with our comprehensive development process that combines scientific research and cutting-edge technology.",
+      "services": "Research, design and prototyping of a new product.",
+      "features": [
+        "Priority technical support",
+        "Personalized consulting",
+        "Satisfaction guarantee",
+        "Complete documentation"
+      ]
+    },
+    {
+      "name": "Comprehensive Digital Transformation",
+      "description": "Modernize all your business processes with intelligent digital solutions that optimize resources and maximize results.",
+      "services": "Complete process digitization, software implementation and staff training.",
+      "features": [
+        "Priority technical support",
+        "Personalized consulting",
+        "Satisfaction guarantee",
+        "Complete documentation"
+      ]
+    },
+    {
+      "name": "Complete Technical Audit",
+      "description": "Comprehensive evaluation of your technical systems and processes to identify improvement opportunities and ensure regulatory compliance.",
+      "services": "Complete systems audit, detailed report and corrective action plan.",
+      "features": [
+        "Priority technical support",
+        "Personalized consulting",
+        "Satisfaction guarantee",
+        "Complete documentation"
+      ]
+    },
+    {
+      "name": "Data Science Consulting",
+      "description": "Advanced data analysis with machine learning and artificial intelligence techniques to extract valuable insights and optimize your operations.",
+      "services": "Data analysis, predictive model creation and interactive dashboard.",
+      "features": [
+        "Advanced predictive analysis",
+        "Machine learning models",
+        "Interactive data visualization",
+        "Personalized consulting"
+      ]
+    },
+    {
+      "name": "Industrial Process Automation",
+      "description": "Implementation of automated systems to optimize production lines, reduce operational costs and increase efficiency.",
+      "services": "Production line automation, robotics integration and monitoring system.",
+      "features": [
+        "Integrated industrial robotics",
+        "Real-time monitoring",
+        "Operational cost reduction",
+        "Predictive maintenance"
+      ]
+    },
+    {
+      "name": "Testing and Laboratory Services",
+      "description": "Specialized laboratory services for physical, chemical and biological testing with state-of-the-art equipment and standardized protocols.",
+      "services": "Laboratory testing, certified report and results advisory.",
+      "features": [
+        "State-of-the-art equipment",
+        "Standardized protocols",
+        "Detailed reports",
+        "Results certification"
+      ]
+    },
+    {
+      "name": "Computational Simulation and Modeling",
+      "description": "Creation of computational models to simulate complex scenarios, predict behaviors and optimize designs before implementation.",
+      "services": "Computational modeling, advanced simulations and optimization report.",
+      "features": [
+        "CFD and FEM simulations",
+        "Design optimization",
+        "Failure prediction",
+        "Complete technical reports"
+      ]
+    },
+    {
+      "name": "Enterprise Cybersecurity",
+      "description": "Comprehensive protection of digital infrastructure with security audits, continuous monitoring and incident response protocols.",
+      "services": "Security audit, continuous monitoring and incident response plan.",
+      "features": [
+        "Vulnerability audits",
+        "24/7 monitoring",
+        "Response protocols",
+        "Regulatory compliance"
+      ]
+    },
+    {
+      "name": "Industrial Internet of Things (IoT)",
+      "description": "Design and implementation of IoT solutions for remote monitoring, predictive maintenance and intelligent industrial asset management.",
+      "services": "Sensor installation, IoT platform and monitoring dashboard.",
+      "features": [
+        "Smart sensors",
+        "Monitoring platform",
+        "Predictive maintenance",
+        "Real-time dashboard"
+      ]
+    },
+    {
+      "name": "ISO Certification and Standards",
+      "description": "Complete advisory for obtaining and maintaining ISO 9001, 14001, 45001 and other international standard certifications.",
+      "services": "Diagnosis, implementation plan and support until ISO certification.",
+      "features": [
+        "Free initial diagnosis",
+        "Implementation plan",
+        "Internal audits",
+        "Support until certification"
+      ]
+    },
+    {
+      "name": "Applied Biotechnology",
+      "description": "Research and development in biotechnology for applications in health, agriculture, food and sustainable industrial processes.",
+      "services": "Biotechnology research, prototype development and scaling.",
+      "features": [
+        "Applied research",
+        "Prototype development",
+        "Laboratory testing",
+        "Industrial scaling"
+      ]
+    },
+    {
+      "name": "Renewable Energy and Efficiency",
+      "description": "Consulting and implementation of solar, wind energy solutions and energy efficiency systems to reduce costs and emissions.",
+      "services": "Feasibility study, system design and complete installation.",
+      "features": [
+        "Feasibility study",
+        "System design",
+        "Installation and commissioning",
+        "Performance monitoring"
+      ]
+    },
+    {
+      "name": "Augmented and Virtual Reality",
+      "description": "Development of immersive experiences with AR/VR for training, simulation, product visualization and interactive marketing.",
+      "services": "AR/VR experience development, interactive simulation and multi-device platform.",
+      "features": [
+        "Interactive simulations",
+        "Immersive training",
+        "3D visualization",
+        "Multi-device platforms"
+      ]
+    },
+    {
+      "name": "Blockchain and Traceability",
+      "description": "Implementation of blockchain solutions for product traceability, smart contracts and supply chain security.",
+      "services": "Blockchain implementation, smart contracts and integration with existing systems.",
+      "features": [
+        "Complete traceability",
+        "Smart contracts",
+        "Immutable security",
+        "ERP integration"
+      ]
+    },
+    {
+      "name": "3D Printing and Rapid Prototyping",
+      "description": "Industrial 3D printing services for rapid prototyping, functional parts and short runs with various materials and finishes.",
+      "services": "3D printing, rapid prototyping and design advisory for optimization.",
+      "features": [
+        "Multiple materials",
+        "48h prototyping",
+        "Professional finishes",
+        "Design advisory"
+      ]
+    }
+  ]
+}
+}
