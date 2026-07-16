@@ -96,7 +96,7 @@ const Header = () => {
             <span className="absolute inset-0 bg-linear-to-r from-orange-500/20 to-yellow-500/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full"></span>
             <span className="relative z-10 flex items-center space-x-1">
               <span className="text-lg">{locale === 'es' ? '🇲🇽' : '🇺🇸'}</span>
-              <span>{locale === 'es' ? 'ENG' : 'ESP'}</span>
+              <span>{locale === 'es' ? 'ESP' : 'ENG'}</span>
             </span>
           </button>
         </nav>

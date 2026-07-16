@@ -30,6 +30,16 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
 
   const addToCart = (product: Product) => {
     setItems(prevItems => {
+      const isCustom = product.id === 'prod-1' || 
+        product.name.includes('Alternativa Personalizada') || 
+        product.name.includes('Custom Alternative');
+      
+      if (isCustom) {
+        // Generar ID único para cada custom service
+        const uniqueId = `prod-1-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+        return [...prevItems, { ...product, id: uniqueId, quantity: 1 }];
+      }
+
       const existingItem = prevItems.find(item => item.id === product.id);
       if (existingItem) {
         return prevItems.map(item =>

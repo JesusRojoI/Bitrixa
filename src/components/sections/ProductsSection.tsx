@@ -7,14 +7,23 @@ import { useCart } from '@/context/CartContext';
 import { useTranslations, useLocale } from 'next-intl';
 import toast from 'react-hot-toast';
 
+// Orden correcto según sitio original:
+// 1. Alternativa Personalizada
+// 2. Transformación Digital Integral
+// 3. Desarrollo de Producto Innovador
+
 const productSlugs = [
-  'desarrollo-de-producto-innovador-2',
+  'alternativa-personalizada',
   'transformacion-digital-integral',
-  'auditoria-tecnica-completa',
+  'desarrollo-de-producto-innovador',
 ];
 
-const productPrices = [40439.00, 29479.00, 24479.00];
-const productImages = ['/i5.jpg', '/i6.jpg', '/i7.jpg'];
+const productPrices = [0, 29479.00, 40439.00];
+const productImages = [
+  'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80',
+  '/i6.jpg',
+  '/i5.jpg',
+];
 const productIds = ['prod-1', 'prod-2', 'prod-3'];
 
 const ProductsSection = () => {
@@ -23,18 +32,35 @@ const ProductsSection = () => {
   const locale = useLocale();
   const { addToCart } = useCart();
   const router = useRouter();
+
+  // Obtener TODOS los nombres de productos desde productDetail
+  const allProductNames = pt.raw('items') as Array<{ name: string }>;
   
-  // Nombres traducidos desde productDetail
-  const productNames = pt.raw('items') as Array<{ name: string }>;
-  // Solo los primeros 3 productos (índices 0, 1, 2)
-  const featuredNames = [productNames[0]?.name, productNames[1]?.name, productNames[2]?.name];
+  // Mapear: translationIndex → nombre traducido
+  // prod-1 → index 0, prod-2 → index 1, prod-3 → index 2
+  const featuredNames = [
+    allProductNames[0]?.name || 'Alternativa Personalizada',
+    allProductNames[1]?.name || 'Transformación Digital Integral',
+    allProductNames[2]?.name || 'Desarrollo de Producto Innovador',
+  ];
 
   const handleAddToCart = (index: number) => {
     const productName = featuredNames[index];
+    const price = productPrices[index];
+    
+    if (price === 0) {
+      toast.success(
+        locale === 'en' ? 'Contact us for a personalized quote' : 'Contáctanos para una cotización personalizada',
+        { style: { background: '#111827', color: '#ffffff', border: '2px solid #f97316', fontWeight: 'bold' } }
+      );
+      router.push(`/${locale}/soporte`);
+      return;
+    }
+
     addToCart({
       id: productIds[index],
       name: productName,
-      price: productPrices[index],
+      price: price,
       slug: productSlugs[index],
       description: '',
     });
@@ -69,7 +95,13 @@ const ProductsSection = () => {
             >
               <a href={`/${locale}/producto/${productSlugs[index]}`} className="relative h-48 overflow-hidden cursor-pointer group">
                 <div style={{ backgroundColor: '#111827' }} className="absolute inset-0">
-                  <Image src={productImages[index]} alt={name} fill className="object-cover transition-transform duration-500 group-hover:scale-110" />
+                  <Image 
+                    src={productImages[index]} 
+                    alt={name} 
+                    fill 
+                    className="object-cover transition-transform duration-500 group-hover:scale-110" 
+                    unoptimized={productImages[index].startsWith('http')}
+                  />
                 </div>
                 <div style={{ backgroundColor: '#111827', opacity: 0.3 }} className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0" />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -88,7 +120,9 @@ const ProductsSection = () => {
 
                 <div style={{ backgroundColor: '#f3f4f6', border: '2px solid #e5e7eb' }} className="mb-6 text-center rounded-xl p-4">
                   <p style={{ color: '#ea580c' }} className="text-3xl font-black">
-                    ${productPrices[index].toLocaleString('es-MX', { minimumFractionDigits: 2 })}
+                    {productPrices[index] === 0
+                      ? (locale === 'en' ? 'Custom' : 'Personalizada')
+                      : `$${productPrices[index].toLocaleString('es-MX', { minimumFractionDigits: 2 })}`}
                   </p>
                   <p style={{ color: '#374151' }} className="font-bold text-sm">{t('price')}</p>
                 </div>
@@ -100,7 +134,11 @@ const ProductsSection = () => {
                     className="w-full flex items-center justify-center space-x-3 font-black py-3.5 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg"
                   >
                     <ShoppingCartIcon className="h-5 w-5" />
-                    <span>{t('addToCart')}</span>
+                    <span>
+                      {productPrices[index] === 0
+                        ? (locale === 'en' ? 'Request a quote' : 'Solicitar cotización')
+                        : t('addToCart')}
+                    </span>
                   </button>
 
                   <a

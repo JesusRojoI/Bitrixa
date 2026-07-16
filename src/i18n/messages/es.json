@@ -24,117 +24,123 @@
     "copyright": "Copyright © 2025, Todos los derechos reservados"
   },
   "hero": {
-  "title": "Innovación Científica al Servicio de tu Proyecto",
-  "titleHighlight": "Científica",
-  "description": "Combinamos tecnología de punta con conocimiento científico riguroso para ofrecer servicios profesionales, técnicos y científicos que impulsan el desarrollo y la eficiencia de tu empresa.",
-  "cta": "Ver más"
-},
+    "title": "Innovación Científica al Servicio de tu Proyecto",
+    "titleHighlight": "Científica",
+    "description": "Fusionamos herramientas tecnológicas de última generación con un sólido respaldo científico para brindar soluciones profesionales, técnicas y especializadas que aceleran el crecimiento y la productividad de tu organización.",
+    "cta": "Ver más"
+  },
   "about": {
     "badge": "Sobre nosotros",
     "title": "Ciencia y Tecnología en Acción",
-    "description": "Bitrixa nace de la pasión por la innovación, la precisión y el compromiso con la excelencia técnica. Somos una empresa dedicada a brindar servicios profesionales, científicos y técnicos con un enfoque integral y personalizado.",
+    "description": "Bitrixa surge del entusiasmo por crear, la exactitud y una firme vocación por la calidad técnica. Nos dedicamos a ofrecer servicios especializados de carácter científico y tecnológico bajo un modelo integral hecho a la medida de cada cliente.",
     "cta": "Saber más"
   },
   "services": {
-  "badge": "Diseñado para ti",
-  "title": "Servicios Especializados",
-  "description": "Ofrecemos un ecosistema completo de servicios científicos y tecnológicos diseñados para impulsar tu organización al siguiente nivel.",
-  "cta": "Ver todos los detalles",
-  "items": [
-    {
-      "title": "Análisis y Consultoría Científica",
-      "description": "Brindamos un enfoque científico riguroso para analizar y evaluar cada aspecto de tus proyectos. Nuestro equipo de expertos diseña y ejecuta estudios detallados que incluyen desde experimentación controlada hasta modelaciones matemáticas y análisis estadísticos avanzados. Esto permite validar procesos, detectar oportunidades de mejora y respaldar decisiones estratégicas con datos confiables y fundamentados. Además, nuestra consultoría se adapta a diversos sectores, asegurando que cada recomendación cumpla con los más altos estándares de calidad científica.",
-      "beneficios": [
-        "Informes técnicos precisos y comprensibles que facilitan la toma de decisiones estratégicas.",
-        "Validación de procesos y productos con metodologías científicas que minimizan riesgos y errores.",
-        "Identificación de nuevas oportunidades de innovación basadas en evidencia concreta.",
-        "Soporte continuo para ajustes y mejoras basadas en resultados reales."
-      ]
-    },
-    {
-      "title": "Asesoría en Regulación y Cumplimiento Técnico",
-      "description": "Navegar el marco regulatorio puede ser un desafío para muchas empresas. Ofrecemos acompañamiento experto para asegurar que tus operaciones, productos y servicios cumplan con todas las normativas técnicas y legales aplicables en tu sector. Nuestro equipo analiza los requisitos vigentes, prepara documentación y diseña procesos que minimizan riesgos legales y facilitan auditorías y certificaciones, permitiéndote enfocarte en el crecimiento y desarrollo del negocio con confianza.",
-      "beneficios": [
-        "Evitación de sanciones y problemas legales derivados de incumplimientos regulatorios.",
-        "Asesoría integral para la preparación y presentación ante organismos de certificación.",
-        "Diseño de procesos internos que garantizan cumplimiento permanente y actualizable.",
-        "Reducción de tiempos y costos en procesos de auditoría y certificación.",
-        "Mejora en la percepción y confianza de clientes, socios y stakeholders."
-      ]
-    },
-    {
-      "title": "Capacitación Técnica Especializada",
-      "description": "El conocimiento actualizado es el motor del éxito empresarial. Nuestros programas de capacitación están diseñados para brindar a tu equipo las habilidades necesarias para afrontar retos tecnológicos y científicos con confianza y eficiencia. Ofrecemos cursos teórico-prácticos sobre las últimas metodologías, herramientas y normativas, adaptándonos al perfil y necesidades de cada organización. Esto se traduce en una fuerza laboral más capacitada, motivada y capaz de contribuir directamente a los objetivos de la empresa.",
-      "beneficios": [
-        "Formación continua que mantiene a tu equipo a la vanguardia de su especialidad.",
-        "Desarrollo de competencias técnicas y científicas clave para mejorar el desempeño laboral.",
-        "Transferencia de conocimientos prácticos aplicables en el día a día.",
-        "Mejora en la comunicación interna y trabajo colaborativo gracias a metodologías modernas.",
-        "Incremento en la productividad y reducción de errores operativos."
-      ]
-    },
-    {
-      "title": "Desarrollo de Software Técnico y Científico",
-      "description": "Desarrollamos soluciones digitales a medida para sectores técnicos y científicos, diseñando aplicaciones, plataformas y sistemas que facilitan la gestión, análisis y simulación de datos complejos. Nuestro trabajo abarca desde la concepción del software hasta su implementación, con un fuerte enfoque en usabilidad, seguridad y escalabilidad. Esto permite a las empresas contar con herramientas que no solo automatizan procesos, sino que también potencian el análisis profundo para una mejor toma de decisiones.",
-      "beneficios": [
-        "Software personalizado que responde a necesidades específicas del sector científico y técnico.",
-        "Automatización de tareas complejas que reduce carga operativa y errores humanos.",
-        "Integración de sistemas para optimizar flujo de información y colaboración.",
-        "Capacidades avanzadas de análisis y visualización de datos para insights estratégicos.",
-        "Soporte técnico y actualización continua para mantener la plataforma eficiente y segura."
-      ]
-    },
-    {
-      "title": "Desarrollo e Innovación Tecnológica",
-      "description": "En un mundo que avanza a gran velocidad, mantenerse a la vanguardia tecnológica es clave. Diseñamos soluciones a la medida que transforman tus procesos productivos y administrativos mediante la implementación de herramientas tecnológicas avanzadas, desde automatización hasta inteligencia artificial y sistemas de monitoreo en tiempo real. Nuestro enfoque está orientado a mejorar la eficiencia, reducir costos operativos y potenciar la capacidad de adaptación de tu empresa frente a nuevos desafíos.",
-      "beneficios": [
-        "Aumento sustancial en la eficiencia operativa mediante la automatización inteligente.",
-        "Reducción de costos y tiempos asociados a procesos manuales o tradicionales.",
-        "Implementación de tecnologías flexibles que se adaptan a la evolución de tu negocio.",
-        "Acceso a información en tiempo real para una toma de decisiones ágil y fundamentada.",
-        "Incremento en la competitividad a nivel nacional e internacional."
-      ]
-    },
-    {
-      "title": "Gestión y Control de Calidad",
-      "description": "La excelencia en productos y servicios es esencial para destacar en mercados cada vez más exigentes. Implementamos sistemas de gestión y control de calidad que aseguran que cada fase de producción o prestación de servicios cumple con normas estrictas, nacionales e internacionales. Nuestro equipo realiza auditorías, inspecciones y pruebas continuas para garantizar la conformidad y promover la mejora continua, protegiendo la reputación y confianza que tus clientes depositan en tu marca.",
-      "beneficios": [
-        "Reducción significativa de errores, defectos y retrabajos, ahorrando recursos valiosos.",
-        "Garantía de cumplimiento con estándares regulatorios que facilitan la entrada a nuevos mercados.",
-        "Mejoras continuas en procesos y productos que incrementan la satisfacción y fidelidad de clientes.",
-        "Fortalecimiento de la imagen corporativa a través de certificaciones reconocidas.",
-        "Capacitación especializada para equipos en metodologías de calidad."
-      ]
-    }
-  ]
-},
+    "badge": "Diseñado para ti",
+    "title": "Servicios Especializados",
+    "description": "Ponemos a tu disposición una gama completa de servicios científico-tecnológicos pensados para llevar a tu empresa al siguiente escalón de rendimiento.",
+    "cta": "Ver todos los detalles",
+    "items": [
+      {
+        "title": "Análisis y Consultoría Científica",
+        "description": "Abordamos cada proyecto con una mirada científica profunda, examinando cada detalle mediante estudios a la medida que combinan experimentos controlados, simulaciones matemáticas y estadística de alto nivel. El resultado: procesos validados, áreas de mejora visibles y decisiones estratégicas apuntaladas por información verificable. Nuestra asesoría se moldea a cualquier industria, manteniendo siempre los criterios de calidad más exigentes.",
+        "beneficios": [
+          "Reportes técnicos detallados y fáciles de interpretar que orientan las decisiones clave.",
+          "Confirmación de procesos y productos usando métodos científicos que reducen fallos e incertidumbre.",
+          "Detección temprana de nichos de innovación respaldados por datos objetivos.",
+          "Asistencia permanente para refinar y perfeccionar con base en evidencias tangibles."
+        ]
+      },
+      {
+        "title": "Asesoría en Regulación y Cumplimiento Técnico",
+        "description": "Moverse entre normativas puede volverse un laberinto para cualquier negocio. Nosotros te guiamos paso a paso para que cada parte de tu operación —desde productos hasta servicios— se ajuste a las disposiciones técnicas y legales que rigen tu industria. Revisamos la legislación actual, elaboramos la documentación necesaria y diseñamos flujos de trabajo que alejan los riesgos jurídicos y allanan el camino hacia auditorías y certificaciones, dejándote libre para concentrarte en hacer crecer tu empresa.",
+        "beneficios": [
+          "Protección frente a multas y conflictos legales por faltas normativas.",
+          "Orientación completa para preparar y presentar tu caso ante entes certificadores.",
+          "Creación de rutinas internas que mantienen la conformidad vigente y actualizada.",
+          "Ahorro de tiempo y dinero en cada ciclo de auditoría y certificación.",
+          "Incremento de la credibilidad y seguridad que proyectas a clientes, aliados y grupos de interés."
+        ]
+      },
+      {
+        "title": "Capacitación Técnica Especializada",
+        "description": "Mantener fresco el conocimiento es lo que distingue a las empresas líderes. Nuestros programas formativos dotan a tu personal de las competencias necesarias para encarar desafíos técnicos y científicos con seguridad y soltura. Impartimos sesiones que mezclan teoría y práctica sobre las tendencias más recientes en métodos, instrumentos y regulaciones, ajustándonos al momento y las metas de cada organización. El efecto inmediato es un equipo más preparado, entusiasmado y enfocado en aportar valor real a los objetivos del negocio.",
+        "beneficios": [
+          "Actualización permanente que sitúa a tu plantilla en la frontera de su disciplina.",
+          "Fortalecimiento de aptitudes técnicas y científicas esenciales para subir el rendimiento.",
+          "Transmisión de saberes que se aplican de manera inmediata en las tareas diarias.",
+          "Fluidez en la comunicación interna y el trabajo en equipo mediante dinámicas contemporáneas.",
+          "Elevación de la productividad y disminución de fallos en la operación."
+        ]
+      },
+      {
+        "title": "Desarrollo de Software Técnico y Científico",
+        "description": "Construimos herramientas digitales únicas para entornos técnicos y científicos: aplicaciones, entornos web y sistemas que simplifican la administración, el procesamiento y la simulación de información compleja. Acompañamos cada etapa, desde el boceto inicial hasta la puesta en marcha, cuidando al máximo la facilidad de uso, la protección de los datos y la capacidad de crecer sin fricciones. El propósito es entregar soluciones que automaticen las labores repetitivas y al mismo tiempo potencien la interpretación avanzada de datos para decidir mejor.",
+        "beneficios": [
+          "Aplicaciones hechas a la medida que atienden necesidades reales del ámbito técnico-científico.",
+          "Mecanización de procesos complejos que descarga trabajo manual y reduce equivocaciones.",
+          "Conexión de plataformas para agilizar el tránsito de datos y el trabajo conjunto.",
+          "Herramientas potentes de lectura y representación gráfica de datos para obtener inteligencia de negocio.",
+          "Mantenimiento y evolución constante del sistema para conservar su rendimiento y blindaje."
+        ]
+      },
+      {
+        "title": "Desarrollo e Innovación Tecnológica",
+        "description": "En una era donde todo se mueve a una velocidad vertiginosa, permanecer en la cresta de la ola tecnológica es una ventaja decisiva. Creamos soluciones personalizadas que reinventan tus procesos de producción y gestión incorporando recursos avanzados como automatismos, inteligencia artificial y vigilancia en directo. Nuestra meta es clara: elevar el rendimiento, recortar gastos operativos y ensanchar la capacidad de tu empresa para responder con agilidad a los retos que vienen.",
+        "beneficios": [
+          "Salto notable en el desempeño operativo gracias a la robotización inteligente de tareas.",
+          "Recorte de gastos y plazos vinculados a métodos manuales o anticuados.",
+          "Adopción de tecnologías adaptables que acompañan la evolución natural de tu actividad.",
+          "Disponibilidad de datos al instante para una toma de decisiones rápida y bien documentada.",
+          "Posicionamiento competitivo reforzado tanto en el mercado local como en el exterior."
+        ]
+      },
+      {
+        "title": "Gestión y Control de Calidad",
+        "description": "Lograr la excelencia en lo que ofreces es indispensable para sobresalir en mercados cada vez más competitivos. Instauramos esquemas de aseguramiento y supervisión de la calidad que verifican el apego a normas rigurosas —locales e internacionales— en cada tramo del proceso. Mediante inspecciones, auditorías y ensayos periódicos, corroboramos la conformidad e impulsamos la mejora sostenida, blindando la buena imagen y la confianza que tus consumidores han puesto en tu firma.",
+        "beneficios": [
+          "Caída drástica de fallos, imperfecciones y repeticiones, con el consiguiente ahorro de recursos.",
+          "Certeza de alineación con estándares oficiales, lo que abre puertas a nuevos mercados.",
+          "Perfeccionamiento progresivo de procesos y productos que eleva la lealtad de los compradores.",
+          "Consolidación de la reputación empresarial mediante sellos de calidad ampliamente aceptados.",
+          "Instrucción específica para los equipos en sistemas y prácticas de calidad."
+        ]
+      }
+    ]
+  },
   "products": {
   "badge": "Alternativas",
   "title": "Soluciones a tu Medida",
-  "description": "Descubre nuestras alternativas premium diseñadas para empresas que buscan excelencia, innovación y resultados medibles.",
+  "description": "Explora nuestras opciones premium pensadas para organizaciones que persiguen calidad superior, espíritu innovador y logros cuantificables.",
   "addToCart": "Agregar al carrito",
   "viewDetails": "Ver más detalles",
   "cta": "Ver todas las alternativas",
   "price": "MXN + IVA",
   "items": [
-    {
-      "name": "Desarrollo de Producto Innovador"
-    },
-    {
-      "name": "Transformación Digital Integral"
-    },
-    {
-      "name": "Auditoría Técnica Completa"
-    }
+    { "name": "Alternativa Personalizada" },
+    { "name": "Transformación Digital Integral" },
+    { "name": "Desarrollo de Producto Innovador" },
+    { "name": "Auditoría Técnica Media" },
+    { "name": "Auditoría Técnica Completa" },
+    { "name": "Consultoría en Regulación y Cumplimiento" },
+    { "name": "Desarrollo de Software a Medida" },
+    { "name": "Desarrollo de Software Básico" },
+    { "name": "Implementación de Sistema de Media" },
+    { "name": "Implementación de Sistema de Calidad Básica" },
+    { "name": "Capacitación Técnica Intensiva" },
+    { "name": "Desarrollo de Prototipo Básico" },
+    { "name": "Consultoría Media" },
+    { "name": "Consultoría Básica" },
+    { "name": "Análisis Rápido" }
   ]
 },
   "contact": {
     "badge": "Contáctanos",
     "title": "Estamos Aquí para Ayudarte",
-    "description": "Cuéntanos sobre tu proyecto y descubre cómo podemos impulsar tu empresa con soluciones científicas y tecnológicas innovadoras.",
+    "description": "Háblanos de tu iniciativa y averigua cómo podemos potenciar tu negocio mediante respuestas científicas y tecnológicas de vanguardia.",
     "form": {
       "title": "Escríbenos",
-      "description": "En Bitrixa valoramos la transparencia, la calidad y el compromiso, garantizando que cada servicio entregue valor real y medible a tu empresa.",
+      "description": "En Bitrixa ponemos en primer plano la claridad, la excelencia y la responsabilidad, asegurando que cada prestación genere un beneficio concreto y demostrable para tu compañía.",
       "name": "Nombre",
       "phone": "Teléfono",
       "email": "Email",
@@ -242,8 +248,8 @@
     "products": "Productos",
     "quantity": "Cantidad",
     "paymentSummary": "Resumen de Pago",
-    "emailSent": "Hemos enviado un email de confirmación a",
-    "checkSpam": "Revisa tu bandeja de entrada y spam",
+    "emailSent": "Te enviamos un correo de confirmación a",
+    "checkSpam": "Revisa tu bandeja de entrada y la carpeta de spam",
     "backHome": "Volver al inicio",
     "continueShopping": "Seguir comprando"
   },
@@ -253,20 +259,20 @@
     "about": {
       "badge": "Sobre nosotros",
       "title": "Ciencia y Tecnología en Acción",
-      "description1": "Nuestro compromiso es transformar datos y procesos complejos en soluciones claras, eficientes y adaptadas a tus necesidades específicas, ya sea en proyectos locales o internacionales.",
-      "description2": "Desde análisis científicos hasta asesoría técnica y desarrollo tecnológico, somos el socio ideal para proyectos que requieren excelencia, precisión y resultados medibles.",
-      "description3": "Descubre cómo la ciencia y la tecnología se unen en Bitrixa para acelerar tu crecimiento."
+      "description1": "Nuestra razón de ser es traducir información y operaciones intrincadas en respuestas nítidas, funcionales y ajustadas a lo que realmente necesitas, ya sea en iniciativas de alcance doméstico o transfronterizo.",
+      "description2": "Abarcamos desde investigación aplicada y orientación técnica hasta ingeniería de nuevos desarrollos, siendo el compañero estratégico que toda iniciativa ambiciosa requiere cuando busca rigor, exactitud e impacto comprobable.",
+      "description3": "Conoce el punto donde el método científico y los recursos tecnológicos se entrelazan en Bitrixa para imprimir velocidad a tu evolución."
     },
     "value": {
       "badge": "Nuestra oferta de valor",
       "title": "Nuestros pilares",
-      "description": "Con un equipo multidisciplinario de expertos, tecnología avanzada y metodologías precisas, llevamos tu negocio al siguiente nivel de innovación y competitividad.",
+      "description": "Un equipo de especialistas de distintas disciplinas, infraestructura tecnológica de punta y procedimientos afinados que proyectan tu negocio hacia una nueva dimensión de innovación y ventaja competitiva.",
       "commitment": "Nuestro compromiso",
-      "commitmentContent": "Es transformar datos y procesos complejos en soluciones claras, eficientes y adaptadas a tus necesidades específicas, ya sea en proyectos locales o internacionales.",
+      "commitmentContent": "Radica en descifrar realidades operativas y flujos de información enmarañados para convertirlos en estrategias límpidas, eficaces y alineadas con tus circunstancias particulares, sin importar si el proyecto opera localmente o trasciende fronteras.",
       "mission": "Nuestra misión",
-      "missionContent": "Nuestra misión es facilitar el acceso a soluciones innovadoras que integren rigor científico y avances tecnológicos para maximizar el impacto y eficiencia de cada proyecto.",
+      "missionContent": "Abrir caminos hacia soluciones vanguardistas donde el rigor del pensamiento científico se fusiona con los progresos tecnológicos más recientes, con el fin de multiplicar el alcance y la efectividad de cada emprendimiento.",
       "team": "Nuestro equipo de expertos",
-      "teamContent": "Contamos con profesionales altamente capacitados en áreas como ingeniería, análisis de datos, consultoría técnica, desarrollo tecnológico y asesoría científica, que trabajan en sinergia para ofrecerte resultados confiables y escalables."
+      "teamContent": "Reunimos a especialistas de alto nivel en ramas como ingeniería, inteligencia de datos, asesoramiento normativo, creación de tecnología y consultoría científica, que aúnan talento para proporcionarte certezas sólidas y expansibles."
     }
   },
   "email": {
@@ -275,7 +281,7 @@
       "adminTitle": "Nuevo mensaje de Bitrixa",
       "userSubject": "Hemos recibido tu consulta, {name}",
       "userTitle": "Gracias por contactarnos, {name}",
-      "userMessage": "Hemos recibido tu mensaje y nuestro equipo te responderá en breve.",
+      "userMessage": "Tu mensaje está en nuestras manos. Pronto recibirás una respuesta de nuestro equipo.",
       "summary": "Resumen de tu mensaje:",
       "regards": "Saludos cordiales,",
       "team": "El equipo de Bitrixa"
@@ -304,19 +310,19 @@
   "productDetail": {
   "items": [
     {
-      "name": "Desarrollo de Producto Innovador",
-      "description": "Transforma tus ideas en productos tangibles con nuestro proceso de desarrollo integral que combina investigación científica y tecnología de vanguardia.",
-      "services": "Investigación, diseño y prototipado de un nuevo producto.",
+      "name": "Alternativa Personalizada",
+      "description": "Solución diseñada a la medida de tus necesidades específicas. Contáctanos para recibir una cotización personalizada.",
+      "services": "Solución completamente adaptada a los requerimientos del cliente.",
       "features": [
-        "Soporte técnico prioritario",
         "Consultoría personalizada",
-        "Garantía de satisfacción",
-        "Documentación completa"
+        "Diseño a la medida",
+        "Soporte dedicado",
+        "Cotización sin compromiso"
       ]
     },
     {
       "name": "Transformación Digital Integral",
-      "description": "Moderniza todos tus procesos empresariales con soluciones digitales inteligentes que optimizan recursos y maximizan resultados.",
+      "description": "Renueva por completo el funcionamiento de tu empresa con plataformas digitales inteligentes que aprovechan mejor tus recursos y disparan el rendimiento.",
       "services": "Digitalización completa de procesos, implementación de software y capacitación del personal.",
       "features": [
         "Soporte técnico prioritario",
@@ -326,8 +332,30 @@
       ]
     },
     {
+      "name": "Desarrollo de Producto Innovador",
+      "description": "Materializa tus conceptos en artículos reales mediante un recorrido completo de desarrollo donde el pensamiento científico y los recursos tecnológicos más avanzados trabajan en conjunto.",
+      "services": "Investigación, diseño y prototipado de un nuevo producto.",
+      "features": [
+        "Soporte técnico prioritario",
+        "Consultoría personalizada",
+        "Garantía de satisfacción",
+        "Documentación completa"
+      ]
+    },
+    {
+      "name": "Auditoría Técnica Media",
+      "description": "Revisión técnica de nivel medio para evaluar el estado actual de tus sistemas y procesos, identificando áreas de mejora prioritarias.",
+      "services": "Auditoría técnica de alcance medio con informe detallado y recomendaciones.",
+      "features": [
+        "Evaluación de sistemas",
+        "Informe de hallazgos",
+        "Recomendaciones prácticas",
+        "Seguimiento básico"
+      ]
+    },
+    {
       "name": "Auditoría Técnica Completa",
-      "description": "Evaluación exhaustiva de tus sistemas y procesos técnicos para identificar oportunidades de mejora y garantizar el cumplimiento normativo.",
+      "description": "Examina con lupa tus infraestructuras y métodos operativos para descubrir puntos de mejora y blindar el apego a las disposiciones vigentes.",
       "services": "Auditoría completa de sistemas, informe detallado y plan de acción correctiva.",
       "features": [
         "Soporte técnico prioritario",
@@ -337,135 +365,113 @@
       ]
     },
     {
-      "name": "Consultoría en Ciencia de Datos",
-      "description": "Análisis avanzado de datos con técnicas de machine learning e inteligencia artificial para extraer insights valiosos y optimizar tus operaciones.",
-      "services": "Análisis de datos, creación de modelos predictivos y dashboard interactivo.",
+      "name": "Consultoría en Regulación y Cumplimiento",
+      "description": "Asesoría especializada para asegurar que tu empresa cumple con todas las normativas técnicas y legales aplicables a tu sector.",
+      "services": "Consultoría en regulación aplicable, diagnóstico y plan de acción.",
       "features": [
-        "Análisis predictivo avanzado",
-        "Modelos de machine learning",
-        "Visualización de datos interactiva",
-        "Consultoría personalizada"
+        "Análisis normativo",
+        "Plan de cumplimiento",
+        "Documentación legal",
+        "Seguimiento regulatorio"
       ]
     },
     {
-      "name": "Automatización de Procesos Industriales",
-      "description": "Implementación de sistemas automatizados para optimizar líneas de producción, reducir costos operativos y aumentar la eficiencia.",
-      "services": "Automatización de línea de producción, integración de robótica y sistema de monitoreo.",
+      "name": "Desarrollo de Software a Medida",
+      "description": "Creación de soluciones de software personalizadas para cubrir necesidades específicas de tu negocio con tecnología moderna y escalable.",
+      "services": "Desarrollo de software personalizado, pruebas y despliegue en producción.",
       "features": [
-        "Robótica industrial integrada",
-        "Monitoreo en tiempo real",
-        "Reducción de costos operativos",
-        "Mantenimiento predictivo"
+        "Desarrollo full-stack",
+        "Arquitectura escalable",
+        "Pruebas de calidad",
+        "Despliegue y soporte"
       ]
     },
     {
-      "name": "Laboratorio de Pruebas y Ensayos",
-      "description": "Servicios de laboratorio especializado para pruebas físicas, químicas y biológicas con equipos de última generación y protocolos estandarizados.",
-      "services": "Pruebas de laboratorio, informe certificado y asesoría en resultados.",
+      "name": "Desarrollo de Software Básico",
+      "description": "Solución de software funcional y eficiente para cubrir necesidades operativas esenciales de tu empresa.",
+      "services": "Desarrollo de software con funcionalidades esenciales y documentación.",
       "features": [
-        "Equipos de última generación",
-        "Protocolos estandarizados",
-        "Informes detallados",
-        "Certificación de resultados"
+        "Funcionalidades esenciales",
+        "Interfaz amigable",
+        "Pruebas básicas",
+        "Documentación de uso"
       ]
     },
     {
-      "name": "Simulación y Modelado Computacional",
-      "description": "Creación de modelos computacionales para simular escenarios complejos, predecir comportamientos y optimizar diseños antes de la implementación.",
-      "services": "Modelado computacional, simulaciones avanzadas y reporte de optimización.",
+      "name": "Implementación de Sistema de Media",
+      "description": "Instalación y configuración de sistemas de complejidad media para optimizar tus operaciones diarias.",
+      "services": "Implementación de sistema, configuración y capacitación al equipo.",
       "features": [
-        "Simulaciones CFD y FEM",
-        "Optimización de diseños",
-        "Predicción de fallos",
-        "Informes técnicos completos"
+        "Configuración completa",
+        "Migración de datos",
+        "Capacitación inicial",
+        "Soporte post-implementación"
       ]
     },
     {
-      "name": "Ciberseguridad Empresarial",
-      "description": "Protección integral de infraestructura digital con auditorías de seguridad, monitoreo continuo y protocolos de respuesta ante incidentes.",
-      "services": "Auditoría de seguridad, monitoreo continuo y plan de respuesta a incidentes.",
+      "name": "Implementación de Sistema de Calidad Básica",
+      "description": "Puesta en marcha de un sistema de gestión de calidad básico para estandarizar procesos y mejorar resultados.",
+      "services": "Implementación de sistema de calidad básico con manual y procedimientos.",
       "features": [
-        "Auditorías de vulnerabilidad",
-        "Monitoreo 24/7",
-        "Protocolos de respuesta",
-        "Cumplimiento normativo"
+        "Manual de calidad",
+        "Procedimientos básicos",
+        "Formatos de registro",
+        "Auditoría inicial"
       ]
     },
     {
-      "name": "Internet de las Cosas (IoT) Industrial",
-      "description": "Diseño e implementación de soluciones IoT para monitoreo remoto, mantenimiento predictivo y gestión inteligente de activos industriales.",
-      "services": "Instalación de sensores, plataforma IoT y dashboard de monitoreo.",
+      "name": "Capacitación Técnica Intensiva",
+      "description": "Programa intensivo de formación técnica para equipos que necesitan actualizar rápidamente sus competencias.",
+      "services": "Capacitación intensiva presencial o virtual con material de apoyo.",
       "features": [
-        "Sensores inteligentes",
-        "Plataforma de monitoreo",
-        "Mantenimiento predictivo",
-        "Dashboard en tiempo real"
+        "Sesiones intensivas",
+        "Material didáctico",
+        "Ejercicios prácticos",
+        "Certificado de asistencia"
       ]
     },
     {
-      "name": "Certificación ISO y Normativas",
-      "description": "Asesoría completa para obtención y mantenimiento de certificaciones ISO 9001, 14001, 45001 y otras normativas internacionales.",
-      "services": "Diagnóstico, plan de implementación y acompañamiento hasta certificación ISO.",
+      "name": "Desarrollo de Prototipo Básico",
+      "description": "Creación de un prototipo funcional básico para validar conceptos y demostrar viabilidad técnica.",
+      "services": "Desarrollo de prototipo básico con pruebas de concepto.",
       "features": [
-        "Diagnóstico inicial gratuito",
-        "Plan de implementación",
-        "Auditorías internas",
-        "Acompañamiento hasta certificación"
+        "Diseño conceptual",
+        "Prototipo funcional",
+        "Pruebas de concepto",
+        "Informe de viabilidad"
       ]
     },
     {
-      "name": "Biotecnología Aplicada",
-      "description": "Investigación y desarrollo en biotecnología para aplicaciones en salud, agricultura, alimentos y procesos industriales sostenibles.",
-      "services": "Investigación biotecnológica, desarrollo de prototipos y escalamiento.",
+      "name": "Consultoría Media",
+      "description": "Servicio de consultoría de alcance medio para resolver dudas técnicas y recibir orientación especializada.",
+      "services": "Consultoría de nivel medio con análisis y recomendaciones documentadas.",
       "features": [
-        "Investigación aplicada",
-        "Desarrollo de prototipos",
-        "Ensayos de laboratorio",
-        "Escalamiento industrial"
+        "Sesiones de consulta",
+        "Análisis de situación",
+        "Recomendaciones",
+        "Informe resumido"
       ]
     },
     {
-      "name": "Energías Renovables y Eficiencia",
-      "description": "Consultoría e implementación de soluciones de energía solar, eólica y sistemas de eficiencia energética para reducir costos y emisiones.",
-      "services": "Estudio de viabilidad, diseño del sistema e instalación completa.",
+      "name": "Consultoría Básica",
+      "description": "Orientación técnica básica para resolver consultas puntuales y recibir recomendaciones iniciales.",
+      "services": "Consultoría básica con recomendaciones y guía de acción.",
       "features": [
-        "Estudio de viabilidad",
-        "Diseño de sistemas",
-        "Instalación y puesta en marcha",
-        "Monitoreo de rendimiento"
+        "Consulta personalizada",
+        "Recomendaciones iniciales",
+        "Guía de siguientes pasos",
+        "Soporte por correo"
       ]
     },
     {
-      "name": "Realidad Aumentada y Virtual",
-      "description": "Desarrollo de experiencias inmersivas con AR/VR para entrenamiento, simulación, visualización de productos y marketing interactivo.",
-      "services": "Desarrollo de experiencia AR/VR, simulación interactiva y plataforma multi-dispositivo.",
+      "name": "Análisis Rápido",
+      "description": "Evaluación rápida de una situación o problema técnico para obtener un diagnóstico inicial y recomendaciones inmediatas.",
+      "services": "Análisis rápido con diagnóstico y recomendaciones en 24 horas.",
       "features": [
-        "Simulaciones interactivas",
-        "Entrenamiento inmersivo",
-        "Visualización 3D",
-        "Plataformas multi-dispositivo"
-      ]
-    },
-    {
-      "name": "Blockchain y Trazabilidad",
-      "description": "Implementación de soluciones blockchain para trazabilidad de productos, contratos inteligentes y seguridad en la cadena de suministro.",
-      "services": "Implementación blockchain, contratos inteligentes e integración con sistemas existentes.",
-      "features": [
-        "Trazabilidad completa",
-        "Contratos inteligentes",
-        "Seguridad inmutable",
-        "Integración con ERP"
-      ]
-    },
-    {
-      "name": "Impresión 3D y Prototipado Rápido",
-      "description": "Servicios de impresión 3D industrial para prototipado rápido, piezas funcionales y series cortas con diversos materiales y acabados.",
-      "services": "Impresión 3D, prototipado rápido y asesoría de diseño para optimización.",
-      "features": [
-        "Múltiples materiales",
-        "Prototipado en 48h",
-        "Acabados profesionales",
-        "Asesoría de diseño"
+        "Diagnóstico express",
+        "Informe breve",
+        "Recomendaciones clave",
+        "Respuesta en 24h"
       ]
     }
   ]
