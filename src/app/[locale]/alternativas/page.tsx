@@ -23,7 +23,10 @@ const AlternativasPage = () => {
     const translatedName = productNames[producto.translationIndex]?.name || producto.nombre;
 
     if (producto.precio === 0) {
-      router.push(`/${locale}/producto/${producto.slug}`);
+      const contactoSection = document.getElementById('contacto-seccion');
+      if (contactoSection) {
+        contactoSection.scrollIntoView({ behavior: 'smooth' });
+      }
       return;
     }
 
@@ -141,7 +144,7 @@ const AlternativasPage = () => {
       </section>
 
       {/* Sección de contacto */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white" id="contacto-seccion">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <p className="text-sm font-black uppercase tracking-widest text-orange-500 mb-4">{contactT('badge')}</p>

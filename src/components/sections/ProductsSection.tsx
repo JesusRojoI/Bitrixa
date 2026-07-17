@@ -46,13 +46,12 @@ const ProductsSection = () => {
     const price = productPrices[index];
     
     if (price === 0) {
-      toast.success(
-        locale === 'en' ? 'Contact us for a personalized quote' : 'Contáctanos para una cotización personalizada',
-        { style: { background: '#111827', color: '#ffffff', border: '2px solid #f97316', fontWeight: 'bold' } }
-      );
-      router.push(`/${locale}/soporte`);
-      return;
-    }
+  const contactoSection = document.getElementById('contacto-seccion');
+  if (contactoSection) {
+    contactoSection.scrollIntoView({ behavior: 'smooth' });
+  }
+  return;
+}
 
     addToCart({
       id: productIds[index],
