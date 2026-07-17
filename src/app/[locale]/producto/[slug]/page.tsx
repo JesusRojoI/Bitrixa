@@ -38,9 +38,7 @@ const ProductoPage = () => {
   const productName = t(`items.${translationIndex}.name`);
   const productDescription = t(`items.${translationIndex}.description`);
   const productServices = t(`items.${translationIndex}.services`);
-  const productFeatures = t.raw(`items.${translationIndex}.features`) as string[];
 
-  // Estado para Alternativa Personalizada
   const [folio, setFolio] = useState('');
   const [precioPersonalizado, setPrecioPersonalizado] = useState('');
   const [errors, setErrors] = useState<{ folio?: string; precio?: string }>({});
@@ -64,16 +62,13 @@ const ProductoPage = () => {
 
   const validarFormulario = (): boolean => {
     const newErrors: { folio?: string; precio?: string } = {};
-
     if (!folio.trim()) {
       newErrors.folio = locale === 'en' ? 'Folio number is required' : 'El número de folio es requerido';
     }
-
     const precioNum = parseFloat(precioPersonalizado);
-if (!precioPersonalizado.trim() || isNaN(precioNum) || precioNum <= 0) {
-  newErrors.precio = locale === 'en' ? 'Enter a valid positive amount' : 'Ingresa una cantidad positiva válida';
-}
-
+    if (!precioPersonalizado.trim() || isNaN(precioNum) || precioNum <= 0) {
+      newErrors.precio = locale === 'en' ? 'Enter a valid positive amount' : 'Ingresa una cantidad positiva válida';
+    }
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -87,7 +82,6 @@ if (!precioPersonalizado.trim() || isNaN(precioNum) || precioNum <= 0) {
         );
         return;
       }
-
       const precioFinal = parseFloat(precioPersonalizado);
       addToCart({
         id: producto.id,
@@ -120,7 +114,6 @@ if (!precioPersonalizado.trim() || isNaN(precioNum) || precioNum <= 0) {
 
   return (
     <main className="bg-gray-100">
-      {/* Breadcrumb */}
       <section className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="flex items-center space-x-2 text-sm font-bold text-gray-400 mb-4">
@@ -132,22 +125,17 @@ if (!precioPersonalizado.trim() || isNaN(precioNum) || precioNum <= 0) {
             <span>/</span>
             <span className="text-orange-400">{productName}</span>
           </div>
-          <a
-            href={`/${locale}/alternativas`}
-            className="inline-flex items-center space-x-2 text-gray-400 hover:text-white transition-colors font-bold"
-          >
+          <a href={`/${locale}/alternativas`} className="inline-flex items-center space-x-2 text-gray-400 hover:text-white transition-colors font-bold">
             <ArrowLeftIcon className="h-5 w-5" />
             <span>{locale === 'en' ? 'Back to alternatives' : 'Volver a alternativas'}</span>
           </a>
         </div>
       </section>
 
-      {/* Detalle del producto */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Imagen */}
-            <div className="relative h-80 lg:h-full min-h-100 rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative h-80 lg:h-full min-h-[400px] rounded-2xl overflow-hidden shadow-xl">
               <Image
                 src={producto.imagen}
                 alt={productName}
@@ -157,7 +145,6 @@ if (!precioPersonalizado.trim() || isNaN(precioNum) || precioNum <= 0) {
               />
             </div>
 
-            {/* Contenido */}
             <div className="flex flex-col justify-center">
               <p className="text-sm font-black uppercase tracking-widest text-orange-500 mb-3">
                 {locale === 'en' ? 'Product' : 'Producto'}
@@ -166,12 +153,10 @@ if (!precioPersonalizado.trim() || isNaN(precioNum) || precioNum <= 0) {
                 {productName}
               </h1>
 
-              {/* Descripción */}
               <p className="text-gray-800 font-bold leading-relaxed mb-6">
                 {productDescription}
               </p>
 
-              {/* SKU */}
               <div className="flex items-center space-x-2 mb-6 bg-gray-200 rounded-lg px-4 py-2 w-fit">
                 <TagIcon className="h-5 w-5 text-gray-600" />
                 <p className="text-gray-700 font-bold text-sm">
@@ -179,7 +164,6 @@ if (!precioPersonalizado.trim() || isNaN(precioNum) || precioNum <= 0) {
                 </p>
               </div>
 
-              {/* Campos para Alternativa Personalizada */}
               {isPersonalizada && (
                 <div className="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-md mb-6 space-y-4">
                   <div>
@@ -189,22 +173,12 @@ if (!precioPersonalizado.trim() || isNaN(precioNum) || precioNum <= 0) {
                     <input
                       type="text"
                       value={folio}
-                      onChange={(e) => {
-                        setFolio(e.target.value);
-                        if (errors.folio) setErrors(prev => ({ ...prev, folio: undefined }));
-                      }}
+                      onChange={(e) => { setFolio(e.target.value); if (errors.folio) setErrors(prev => ({ ...prev, folio: undefined })); }}
                       placeholder={locale === 'en' ? 'Enter folio number' : 'Ingresa el número de folio'}
-                      className={`w-full px-4 py-3 bg-white border-2 rounded-xl focus:outline-none focus:ring-2 transition-all duration-300 text-gray-900 placeholder-gray-400 font-bold ${
-                        errors.folio
-                          ? 'border-red-400 focus:ring-red-500'
-                          : 'border-gray-300 focus:ring-orange-500 focus:border-orange-500'
-                      }`}
+                      className={`w-full px-4 py-3 bg-white border-2 rounded-xl focus:outline-none focus:ring-2 transition-all duration-300 text-gray-900 placeholder-gray-400 font-bold ${errors.folio ? 'border-red-400 focus:ring-red-500' : 'border-gray-300 focus:ring-orange-500 focus:border-orange-500'}`}
                     />
-                    {errors.folio && (
-                      <p className="mt-1 text-sm text-red-600 font-bold">{errors.folio}</p>
-                    )}
+                    {errors.folio && <p className="mt-1 text-sm text-red-600 font-bold">{errors.folio}</p>}
                   </div>
-
                   <div>
                     <label className="block text-sm font-black text-gray-900 mb-2">
                       {locale === 'en' ? 'Total/Partial Payment' : 'Pago total/parcial'} *
@@ -212,33 +186,20 @@ if (!precioPersonalizado.trim() || isNaN(precioNum) || precioNum <= 0) {
                     <input
                       type="number"
                       value={precioPersonalizado}
-                      onChange={(e) => {
-                        setPrecioPersonalizado(e.target.value);
-                        if (errors.precio) setErrors(prev => ({ ...prev, precio: undefined }));
-                      }}
+                      onChange={(e) => { setPrecioPersonalizado(e.target.value); if (errors.precio) setErrors(prev => ({ ...prev, precio: undefined })); }}
                       placeholder={locale === 'en' ? 'Enter amount' : 'Ingresa la cantidad'}
                       step="0.01"
                       min="0.01"
-                      className={`w-full px-4 py-3 bg-white border-2 rounded-xl focus:outline-none focus:ring-2 transition-all duration-300 text-gray-900 placeholder-gray-400 font-bold ${
-                        errors.precio
-                          ? 'border-red-400 focus:ring-red-500'
-                          : 'border-gray-300 focus:ring-orange-500 focus:border-orange-500'
-                      }`}
+                      className={`w-full px-4 py-3 bg-white border-2 rounded-xl focus:outline-none focus:ring-2 transition-all duration-300 text-gray-900 placeholder-gray-400 font-bold ${errors.precio ? 'border-red-400 focus:ring-red-500' : 'border-gray-300 focus:ring-orange-500 focus:border-orange-500'}`}
                     />
-                    {errors.precio && (
-                      <p className="mt-1 text-sm text-red-600 font-bold">{errors.precio}</p>
-                    )}
+                    {errors.precio && <p className="mt-1 text-sm text-red-600 font-bold">{errors.precio}</p>}
                   </div>
-
                   <p className="text-sm font-bold text-gray-600">
-                    {locale === 'en'
-                      ? 'Mexican pesos plus 16% VAT'
-                      : 'pesos mexicanos más 16% de IVA'}
+                    {locale === 'en' ? 'Mexican pesos plus 16% VAT' : 'pesos mexicanos más 16% de IVA'}
                   </p>
                 </div>
               )}
 
-              {/* Precio (solo para productos no personalizados) */}
               {!isPersonalizada && (
                 <div className="mb-6">
                   <p className="text-4xl font-black text-orange-600">
@@ -250,20 +211,16 @@ if (!precioPersonalizado.trim() || isNaN(precioNum) || precioNum <= 0) {
                 </div>
               )}
 
-              {/* Botón Agregar al carrito */}
               <button
                 onClick={handleAddToCart}
                 className="w-full flex items-center justify-center space-x-3 bg-orange-500 hover:bg-orange-600 text-white font-black py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-xl mb-8"
               >
                 <ShoppingCartIcon className="h-6 w-6" />
                 <span className="text-lg">
-                  {isPersonalizada
-                    ? (locale === 'en' ? 'Add to Cart' : 'Agregar al carrito')
-                    : (locale === 'en' ? 'Add to Cart' : 'Agregar al carrito')}
+                  {locale === 'en' ? 'Add to Cart' : 'Agregar al carrito'}
                 </span>
               </button>
 
-              {/* Info adicional para Alternativa Personalizada */}
               {isPersonalizada && (
                 <div className="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-md mb-6">
                   <p className="text-gray-800 font-bold leading-relaxed mb-3">
@@ -272,32 +229,18 @@ if (!precioPersonalizado.trim() || isNaN(precioNum) || precioNum <= 0) {
                       : '¿Ninguno de nuestros programas actuales se ajusta a lo que necesitas? No te preocupes, creamos una alternativa hecha a tu medida.'}
                   </p>
                   <ul className="space-y-2 text-gray-700 font-bold text-sm">
-                    <li>
-                      {locale === 'en'
-                        ? '🔹 Request your personalized quote according to your requirements.'
-                        : '🔹 Solicita tu cotización personalizada según tus requerimientos.'}
-                    </li>
-                    <li>
-                      {locale === 'en'
-                        ? '🔹 Once approved, we will assign you an alternative number so you can make your payment easily and securely.'
-                        : '🔹 Una vez aprobada, te asignaremos un número de alternativa para que realices tu pago de forma fácil y segura.'}
-                    </li>
-                    <li>
-                      {locale === 'en'
-                        ? '🔹 This way you will have exactly what you are looking for, with the flexibility to pay only for what you need.'
-                        : '🔹 Así tendrás exactamente lo que buscas, con la flexibilidad de pagar solo por lo que necesitas.'}
-                    </li>
+                    <li>{locale === 'en' ? '🔹 Request your personalized quote according to your requirements.' : '🔹 Solicita tu cotización personalizada según tus requerimientos.'}</li>
+                    <li>{locale === 'en' ? '🔹 Once approved, we will assign you an alternative number so you can make your payment easily and securely.' : '🔹 Una vez aprobada, te asignaremos un número de alternativa para que realices tu pago de forma fácil y segura.'}</li>
+                    <li>{locale === 'en' ? '🔹 This way you will have exactly what you are looking for, with the flexibility to pay only for what you need.' : '🔹 Así tendrás exactamente lo que buscas, con la flexibilidad de pagar solo por lo que necesitas.'}</li>
                   </ul>
                   <p className="text-gray-800 font-bold mt-3">
-                    {locale === 'en'
-                      ? '📩 Contact us today and receive your personalized proposal.'
-                      : '📩 Contáctanos hoy y recibe tu propuesta personalizada.'}
+                    {locale === 'en' ? '📩 Contact us today and receive your personalized proposal.' : '📩 Contáctanos hoy y recibe tu propuesta personalizada.'}
                   </p>
                 </div>
               )}
 
               {/* Servicios incluidos */}
-              <div className="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-md mb-6">
+              <div className="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-md">
                 <h3 className="text-lg font-black text-orange-500 mb-3 uppercase tracking-wider">
                   {locale === 'en' ? 'Services Included' : 'Servicios incluidos'}
                 </h3>
@@ -305,25 +248,6 @@ if (!precioPersonalizado.trim() || isNaN(precioNum) || precioNum <= 0) {
                   {productServices}
                 </p>
               </div>
-
-              {/* Características */}
-              {productFeatures && productFeatures.length > 0 && (
-                <div className="bg-white rounded-2xl p-6 border-2 border-gray-200 shadow-md">
-                  <h3 className="text-lg font-black text-orange-500 mb-4 uppercase tracking-wider">
-                    {locale === 'en' ? 'Features' : 'Características'}
-                  </h3>
-                  <ul className="space-y-3">
-                    {productFeatures.map((feature, idx) => (
-                      <li key={idx} className="flex items-start space-x-3">
-                        <svg className="h-5 w-5 text-orange-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span className="text-gray-800 font-bold text-sm leading-relaxed">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
             </div>
           </div>
         </div>

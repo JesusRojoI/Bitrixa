@@ -8,12 +8,6 @@ import { useTranslations, useLocale } from 'next-intl';
 import { productos } from '@/data/productos';
 import toast from 'react-hot-toast';
 
-const cupones = [
-  { codigo: 'BITRIXA10', descuento: 10 },
-  { codigo: 'INNOVACION10', descuento: 10 },
-  { codigo: 'CIENCIA10', descuento: 10 },
-];
-
 interface CuponGuardado {
   codigo: string;
   descuento: number;
@@ -33,18 +27,15 @@ const FinalizarCompraPage = () => {
   const [cuponPrevio, setCuponPrevio] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Nombres de productos traducidos
   const productNames = pt.raw('items') as Array<{ name: string }>;
 
   const getTranslatedName = (itemId: string, fallbackName: string) => {
+    if (itemId.startsWith('prod-1-')) return fallbackName;
     const productoData = productos.find(p => p.id === itemId);
-    if (productoData) {
-      return productNames[productoData.translationIndex]?.name || fallbackName;
-    }
+    if (productoData) return productNames[productoData.translationIndex]?.name || fallbackName;
     return fallbackName;
   };
 
-  // Campos del formulario
   const [nombre, setNombre] = useState('');
   const [apellidos, setApellidos] = useState('');
   const [pais, setPais] = useState('México');
@@ -101,18 +92,13 @@ const FinalizarCompraPage = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
     const error = validarFormulario();
     if (error) {
-      toast.error(error, {
-        style: { background: '#fef2f2', color: '#991b1b', border: '1px solid #fca5a5', fontWeight: 'bold' },
-      });
+      toast.error(error, { style: { background: '#fef2f2', color: '#991b1b', border: '1px solid #fca5a5', fontWeight: 'bold' } });
       return;
     }
-
     setIsSubmitting(true);
     const orderId = `BTX-${Date.now().toString(36).toUpperCase()}`;
-
     try {
       const response = await fetch('/api/create-payment', {
         method: 'POST',
@@ -122,79 +108,40 @@ const FinalizarCompraPage = () => {
           orderId,
           customerName: `${nombre} ${apellidos}`,
           customerEmail: email,
-          cardData: {
-            nombreTarjeta,
-            numeroTarjeta: numeroTarjeta.replace(/\s/g, ''),
-            fechaExpiracion,
-            cvv,
-          },
-          shippingData: {
-            direccion: `${direccion}${colonia ? ', ' + colonia : ''}`,
-            ciudad,
-            estado,
-            cp,
-            telefono,
-          },
-          items: items.map((item) => ({
-            name: getTranslatedName(item.id, item.name),
-            quantity: item.quantity,
-            price: item.price,
-          })),
+          cardData: { nombreTarjeta, numeroTarjeta: numeroTarjeta.replace(/\s/g, ''), fechaExpiracion, cvv },
+          shippingData: { direccion: `${direccion}${colonia ? ', ' + colonia : ''}`, ciudad, estado, cp, telefono },
+          items: items.map((item) => ({ name: getTranslatedName(item.id, item.name), quantity: item.quantity, price: item.price })),
           descuentoAplicado,
           descuentoPorcentaje: descuentoAplicado,
           locale,
         }),
       });
-
       const data = await response.json();
-
       if (data.success) {
         const ordenData = {
-          orderId,
-          transactionId: data.data.transactionId,
-          customerName: `${nombre} ${apellidos}`,
-          customerEmail: email,
-          items: items.map((item) => ({
-            name: getTranslatedName(item.id, item.name),
-            quantity: item.quantity,
-            price: item.price,
-          })),
-          subtotal,
-          iva,
-          descuento,
-          descuentoPorcentaje: descuentoAplicado,
-          total,
+          orderId, transactionId: data.data.transactionId,
+          customerName: `${nombre} ${apellidos}`, customerEmail: email,
+          items: items.map((item) => ({ name: getTranslatedName(item.id, item.name), quantity: item.quantity, price: item.price })),
+          subtotal, iva, descuento, descuentoPorcentaje: descuentoAplicado, total,
           last4: data.data.last4,
-          direccion: `${direccion}${colonia ? ', ' + colonia : ''}`,
-          ciudad,
-          estado,
-          cp,
+          direccion: `${direccion}${colonia ? ', ' + colonia : ''}`, ciudad, estado, cp,
           fecha: new Date().toISOString(),
         };
-
         localStorage.setItem('bitrixa-ultima-orden', JSON.stringify(ordenData));
         localStorage.removeItem('bitrixa-cupon');
         clearCart();
-
-        toast.success(
-          locale === 'en' ? 'Payment processed successfully!' : '¡Pago procesado con éxito!',
-          {
-            icon: '🎉',
-            duration: 3000,
-            style: { background: '#f0fdf4', color: '#166534', border: '1px solid #86efac', fontWeight: 'bold' },
-          }
-        );
-
-        setTimeout(() => {
-          router.push(`/${locale}/compra-exitosa`);
-        }, 1500);
+        toast.success(locale === 'en' ? 'Payment processed successfully!' : '¡Pago procesado con éxito!', {
+          icon: '🎉', duration: 3000,
+          style: { background: '#f0fdf4', color: '#166534', border: '1px solid #86efac', fontWeight: 'bold' },
+        });
+        setTimeout(() => router.push(`/${locale}/compra-exitosa`), 1500);
       } else {
         toast.error(data.error || (locale === 'en' ? 'Payment error' : 'Error al procesar el pago'), {
           style: { background: '#fef2f2', color: '#991b1b', border: '1px solid #fca5a5', fontWeight: 'bold' },
         });
       }
     } catch (error) {
-      toast.error(locale === 'en' ? 'Connection error. Try again.' : 'Error de conexión. Intenta de nuevo.', {
+      toast.error(locale === 'en' ? 'Connection error' : 'Error de conexión', {
         style: { background: '#fef2f2', color: '#991b1b', border: '1px solid #fca5a5', fontWeight: 'bold' },
       });
     } finally {
@@ -203,30 +150,48 @@ const FinalizarCompraPage = () => {
   };
 
   const handleAplicarCupon = () => {
-    if (cuponUsado) {
-      toast.error(locale === 'en' ? 'You already have a coupon applied' : 'Ya tienes un cupón aplicado', {
-        style: { background: '#fef2f2', color: '#991b1b', border: '1px solid #fca5a5', fontWeight: 'bold' },
-      });
-      return;
-    }
-    const cuponEncontrado = cupones.find((c) => c.codigo.toLowerCase() === codigoCupon.trim().toLowerCase());
-    if (cuponEncontrado) {
-      setDescuentoAplicado(cuponEncontrado.descuento);
-      setCuponUsado(cuponEncontrado.codigo);
-      setCuponPrevio(true);
-      localStorage.setItem('bitrixa-cupon', JSON.stringify({ codigo: cuponEncontrado.codigo, descuento: cuponEncontrado.descuento }));
-      toast.success(
-        locale === 'en' ? `Coupon applied! ${cuponEncontrado.descuento}% discount` : `¡Cupón aplicado! ${cuponEncontrado.descuento}% de descuento`,
-        { style: { background: '#f0fdf4', color: '#166534', border: '1px solid #86efac', fontWeight: 'bold' } }
-      );
-    } else {
-      toast.error(locale === 'en' ? 'Invalid coupon' : 'Cupón no válido', {
-        style: { background: '#fef2f2', color: '#991b1b', border: '1px solid #fca5a5', fontWeight: 'bold' },
-      });
-    }
-  };
+  if (cuponUsado) {
+    toast.error(
+      locale === 'en' ? 'You already have a coupon applied' : 'Ya tienes un cupón aplicado',
+      { style: { background: '#fef2f2', color: '#991b1b', border: '1px solid #fca5a5', fontWeight: 'bold' } }
+    );
+    return;
+  }
+
+  // Buscar en cupones generados por rasca y gana
+  const cuponesGenerados = JSON.parse(localStorage.getItem('bitrixa-cupones-generados') || '[]');
+  const cuponEncontrado = cuponesGenerados.find(
+    (c: any) => c.codigo.toLowerCase() === codigoCupon.trim().toLowerCase() && !c.usado
+  );
+
+  if (cuponEncontrado) {
+    setDescuentoAplicado(cuponEncontrado.descuento);
+    setCuponUsado(cuponEncontrado.codigo);
+    // Marcar como usado
+    const updated = cuponesGenerados.map((c: any) =>
+      c.codigo === cuponEncontrado.codigo ? { ...c, usado: true } : c
+    );
+    localStorage.setItem('bitrixa-cupones-generados', JSON.stringify(updated));
+    localStorage.setItem('bitrixa-cupon', JSON.stringify({ codigo: cuponEncontrado.codigo, descuento: cuponEncontrado.descuento }));
+    toast.success(
+      locale === 'en' ? `Coupon applied! ${cuponEncontrado.descuento}% discount` : `¡Cupón aplicado! ${cuponEncontrado.descuento}% de descuento`,
+      { style: { background: '#f0fdf4', color: '#166534', border: '1px solid #86efac', fontWeight: 'bold' } }
+    );
+    return;
+  }
+
+  toast.error(
+    locale === 'en' ? 'Invalid coupon' : 'Cupón no válido',
+    { style: { background: '#fef2f2', color: '#991b1b', border: '1px solid #fca5a5', fontWeight: 'bold' } }
+  );
+};
 
   const handleEliminarCupon = () => {
+    if (cuponUsado.startsWith('BTX-')) {
+      const cuponesGenerados = JSON.parse(localStorage.getItem('bitrixa-cupones-generados') || '[]');
+      const updated = cuponesGenerados.map((c: any) => c.codigo === cuponUsado ? { ...c, usado: false } : c);
+      localStorage.setItem('bitrixa-cupones-generados', JSON.stringify(updated));
+    }
     setDescuentoAplicado(0);
     setCuponUsado('');
     setCodigoCupon('');
@@ -253,12 +218,8 @@ const FinalizarCompraPage = () => {
         <section className="py-20">
           <div className="container mx-auto px-4 text-center">
             <div className="bg-white rounded-3xl p-12 shadow-xl max-w-lg mx-auto border-2 border-gray-200">
-              <h2 className="text-2xl font-black text-gray-900 mb-4">
-                {locale === 'en' ? 'Your cart is empty' : 'Tu carrito está vacío'}
-              </h2>
-              <p className="text-gray-700 font-bold mb-8">
-                {locale === 'en' ? 'Add products before checkout' : 'Agrega productos antes de finalizar la compra'}
-              </p>
+              <h2 className="text-2xl font-black text-gray-900 mb-4">{locale === 'en' ? 'Your cart is empty' : 'Tu carrito está vacío'}</h2>
+              <p className="text-gray-700 font-bold mb-8">{locale === 'en' ? 'Add products before checkout' : 'Agrega productos antes de finalizar la compra'}</p>
               <a href={`/${locale}/alternativas`} className="inline-flex items-center space-x-3 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full font-black text-lg transition-all duration-300 shadow-xl">
                 {locale === 'en' ? 'View alternatives' : 'Ver alternativas'}
               </a>
@@ -286,9 +247,7 @@ const FinalizarCompraPage = () => {
         <div className="container mx-auto px-4">
           <form onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              {/* Formulario de facturación */}
               <div className="lg:col-span-2 space-y-8">
-                {/* Cupón */}
                 {!cuponPrevio && (
                   <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-gray-200">
                     <button type="button" onClick={() => setMostrarCupon(!mostrarCupon)} className="text-orange-500 font-black hover:text-orange-600 transition-colors">
@@ -300,13 +259,6 @@ const FinalizarCompraPage = () => {
                         <div className="flex space-x-2">
                           <input type="text" placeholder={t('addCoupon')} value={codigoCupon} onChange={(e) => setCodigoCupon(e.target.value)} className="grow px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 placeholder-gray-400 font-bold text-sm" />
                           <button type="button" onClick={handleAplicarCupon} className="bg-gray-900 hover:bg-orange-600 text-white px-6 py-3 rounded-xl font-black text-sm transition-colors">{t('addCoupon')}</button>
-                        </div>
-                        <div className="mt-3 flex flex-wrap gap-2">
-                          {cupones.map((cupon) => (
-                            <button key={cupon.codigo} type="button" onClick={() => setCodigoCupon(cupon.codigo)} className="text-xs font-bold text-orange-500 hover:text-orange-700 bg-orange-50 hover:bg-orange-100 border border-orange-300 rounded-full px-3 py-1 transition-colors">
-                              {cupon.codigo}
-                            </button>
-                          ))}
                         </div>
                       </div>
                     )}
@@ -330,67 +282,24 @@ const FinalizarCompraPage = () => {
                   </div>
                 )}
 
-                {/* Detalles de facturación */}
                 <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-gray-200">
                   <h2 className="text-xl font-black text-gray-900 mb-6">{t('billing')}</h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label className="block text-sm font-black text-gray-900 mb-2">{t('firstName')} *</label>
-                      <input type="text" required value={nombre} onChange={(e) => setNombre(e.target.value)} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 font-bold" />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-black text-gray-900 mb-2">{t('lastName')} *</label>
-                      <input type="text" required value={apellidos} onChange={(e) => setApellidos(e.target.value)} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 font-bold" />
-                    </div>
-                    <div className="md:col-span-2">
-                      <label className="block text-sm font-black text-gray-900 mb-2">{t('country')} *</label>
-                      <select required value={pais} onChange={(e) => setPais(e.target.value)} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 font-bold">
-                        <option value="México">México</option>
-                      </select>
-                    </div>
-                    <div className="md:col-span-2">
-                      <label className="block text-sm font-black text-gray-900 mb-2">{t('street')} *</label>
-                      <input type="text" required placeholder={t('streetPlaceholder')} value={direccion} onChange={(e) => setDireccion(e.target.value)} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 placeholder-gray-400 font-bold" />
-                    </div>
-                    <div className="md:col-span-2">
-                      <label className="block text-sm font-black text-gray-900 mb-2">{t('colonia')}</label>
-                      <input type="text" placeholder={t('coloniaPlaceholder')} value={colonia} onChange={(e) => setColonia(e.target.value)} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 placeholder-gray-400 font-bold" />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-black text-gray-900 mb-2">{t('city')} *</label>
-                      <input type="text" required value={ciudad} onChange={(e) => setCiudad(e.target.value)} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 font-bold" />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-black text-gray-900 mb-2">{t('state')} *</label>
-                      <select required value={estado} onChange={(e) => setEstado(e.target.value)} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 font-bold">
-                        <option value="Ciudad de México">Ciudad de México</option>
-                        <option value="Estado de México">Estado de México</option>
-                        <option value="Nuevo León">Nuevo León</option>
-                        <option value="Jalisco">Jalisco</option>
-                      </select>
-                    </div>
-                    <div className="md:col-span-2">
-                      <label className="block text-sm font-black text-gray-900 mb-2">{t('cp')} *</label>
-                      <input type="text" required value={cp} onChange={(e) => setCp(e.target.value)} maxLength={5} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 font-bold" />
-                    </div>
-                    <div className="md:col-span-2">
-                      <label className="block text-sm font-black text-gray-900 mb-2">{t('phone')}</label>
-                      <input type="tel" value={telefono} onChange={(e) => setTelefono(e.target.value)} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 font-bold" />
-                    </div>
-                    <div className="md:col-span-2">
-                      <label className="block text-sm font-black text-gray-900 mb-2">{t('email')} *</label>
-                      <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 font-bold" />
-                    </div>
-                    <div className="md:col-span-2">
-                      <label className="block text-sm font-black text-gray-900 mb-2">{t('additional')}</label>
-                      <label className="block text-sm font-bold text-gray-600 mb-2">{t('additionalLabel')}</label>
-                      <textarea rows={3} placeholder={t('additionalPlaceholder')} value={indicaciones} onChange={(e) => setIndicaciones(e.target.value)} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 placeholder-gray-400 font-bold resize-none" />
-                    </div>
+                    <div><label className="block text-sm font-black text-gray-900 mb-2">{t('firstName')} *</label><input type="text" required value={nombre} onChange={(e) => setNombre(e.target.value)} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 font-bold" /></div>
+                    <div><label className="block text-sm font-black text-gray-900 mb-2">{t('lastName')} *</label><input type="text" required value={apellidos} onChange={(e) => setApellidos(e.target.value)} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 font-bold" /></div>
+                    <div className="md:col-span-2"><label className="block text-sm font-black text-gray-900 mb-2">{t('country')} *</label><select required value={pais} onChange={(e) => setPais(e.target.value)} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 font-bold"><option value="México">México</option></select></div>
+                    <div className="md:col-span-2"><label className="block text-sm font-black text-gray-900 mb-2">{t('street')} *</label><input type="text" required placeholder={t('streetPlaceholder')} value={direccion} onChange={(e) => setDireccion(e.target.value)} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 placeholder-gray-400 font-bold" /></div>
+                    <div className="md:col-span-2"><label className="block text-sm font-black text-gray-900 mb-2">{t('colonia')}</label><input type="text" placeholder={t('coloniaPlaceholder')} value={colonia} onChange={(e) => setColonia(e.target.value)} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 placeholder-gray-400 font-bold" /></div>
+                    <div><label className="block text-sm font-black text-gray-900 mb-2">{t('city')} *</label><input type="text" required value={ciudad} onChange={(e) => setCiudad(e.target.value)} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 font-bold" /></div>
+                    <div><label className="block text-sm font-black text-gray-900 mb-2">{t('state')} *</label><select required value={estado} onChange={(e) => setEstado(e.target.value)} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 font-bold"><option value="Ciudad de México">Ciudad de México</option><option value="Estado de México">Estado de México</option><option value="Nuevo León">Nuevo León</option><option value="Jalisco">Jalisco</option></select></div>
+                    <div className="md:col-span-2"><label className="block text-sm font-black text-gray-900 mb-2">{t('cp')} *</label><input type="text" required value={cp} onChange={(e) => setCp(e.target.value)} maxLength={5} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 font-bold" /></div>
+                    <div className="md:col-span-2"><label className="block text-sm font-black text-gray-900 mb-2">{t('phone')}</label><input type="tel" value={telefono} onChange={(e) => setTelefono(e.target.value)} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 font-bold" /></div>
+                    <div className="md:col-span-2"><label className="block text-sm font-black text-gray-900 mb-2">{t('email')} *</label><input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 font-bold" /></div>
+                    <div className="md:col-span-2"><label className="block text-sm font-black text-gray-900 mb-2">{t('additional')}</label><label className="block text-sm font-bold text-gray-600 mb-2">{t('additionalLabel')}</label><textarea rows={3} placeholder={t('additionalPlaceholder')} value={indicaciones} onChange={(e) => setIndicaciones(e.target.value)} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 placeholder-gray-400 font-bold resize-none" /></div>
                   </div>
                 </div>
               </div>
 
-              {/* Resumen del pedido */}
               <div className="lg:col-span-1">
                 <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-gray-200 sticky top-24 space-y-6">
                   <div>
@@ -409,24 +318,12 @@ const FinalizarCompraPage = () => {
                   </div>
 
                   <div className="border-t border-gray-200 pt-4 space-y-3">
-                    <div className="flex justify-between">
-                      <span className="text-gray-700 font-bold">{ct('subtotal')}</span>
-                      <span className="text-gray-900 font-black">${subtotal.toLocaleString('es-MX', { minimumFractionDigits: 2 })}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-700 font-bold">{ct('iva')}</span>
-                      <span className="text-gray-900 font-black">${iva.toLocaleString('es-MX', { minimumFractionDigits: 2 })}</span>
-                    </div>
+                    <div className="flex justify-between"><span className="text-gray-700 font-bold">{ct('subtotal')}</span><span className="text-gray-900 font-black">${subtotal.toLocaleString('es-MX', { minimumFractionDigits: 2 })}</span></div>
+                    <div className="flex justify-between"><span className="text-gray-700 font-bold">{ct('iva')}</span><span className="text-gray-900 font-black">${iva.toLocaleString('es-MX', { minimumFractionDigits: 2 })}</span></div>
                     {descuentoAplicado > 0 && (
-                      <div className="flex justify-between text-green-600">
-                        <span className="font-bold">{ct('discount')} ({descuentoAplicado}%)</span>
-                        <span className="font-black">-${descuento.toLocaleString('es-MX', { minimumFractionDigits: 2 })}</span>
-                      </div>
+                      <div className="flex justify-between text-green-600"><span className="font-bold">{ct('discount')} ({descuentoAplicado}%)</span><span className="font-black">-${descuento.toLocaleString('es-MX', { minimumFractionDigits: 2 })}</span></div>
                     )}
-                    <div className="flex justify-between border-t border-gray-200 pt-3">
-                      <span className="text-lg font-black text-gray-900">{ct('total')}</span>
-                      <span className="text-lg font-black text-orange-600">${total.toLocaleString('es-MX', { minimumFractionDigits: 2 })}</span>
-                    </div>
+                    <div className="flex justify-between border-t border-gray-200 pt-3"><span className="text-lg font-black text-gray-900">{ct('total')}</span><span className="text-lg font-black text-orange-600">${total.toLocaleString('es-MX', { minimumFractionDigits: 2 })}</span></div>
                   </div>
 
                   <div className="border-t border-gray-200 pt-4">
@@ -434,7 +331,7 @@ const FinalizarCompraPage = () => {
                     <p className="text-sm font-bold text-gray-600 mb-4">{t('cardType')}</p>
                     <div className="space-y-4">
                       <div><label className="block text-sm font-black text-gray-900 mb-2">{t('cardName')}</label><input type="text" placeholder={t('cardNamePlaceholder')} value={nombreTarjeta} onChange={(e) => setNombreTarjeta(e.target.value)} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 placeholder-gray-400 font-bold" /></div>
-                      <div><label className="block text-sm font-black text-gray-900 mb-2">{t('cardNumber')}</label><input type="text" placeholder="**** **** **** ****" value={numeroTarjeta} onChange={(e) => setNumeroTarjeta(e.target.value)} maxLength={16} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 placeholder-gray-400 font-bold" /></div>
+                      <div><label className="block text-sm font-black text-gray-900 mb-2">{t('cardNumber')}</label><input type="text" placeholder="**** **** **** ****" value={numeroTarjeta} onChange={(e) => { const raw = e.target.value.replace(/\s/g, '').replace(/\D/g, ''); const limited = raw.slice(0, 16); const formatted = limited.replace(/(\d{4})(?=\d)/g, '$1 '); setNumeroTarjeta(formatted); }} maxLength={19} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 placeholder-gray-400 font-bold" /></div>
                       <div className="grid grid-cols-2 gap-4">
                         <div><label className="block text-sm font-black text-gray-900 mb-2">{t('cardExpiry')}</label><input type="text" placeholder={t('cardExpiryPlaceholder')} value={fechaExpiracion} onChange={(e) => setFechaExpiracion(e.target.value)} maxLength={5} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 placeholder-gray-400 font-bold" /></div>
                         <div><label className="block text-sm font-black text-gray-900 mb-2">{t('cvv')}</label><input type="text" placeholder={t('cvvPlaceholder')} value={cvv} onChange={(e) => setCvv(e.target.value)} maxLength={4} className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 placeholder-gray-400 font-bold" /></div>

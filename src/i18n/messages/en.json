@@ -53,7 +53,7 @@
       },
       {
         "title": "Regulatory and Technical Compliance Advisory",
-        "description": "Navigating regulations can become a maze for any business. We guide you step by step so that every part of your operation —from products to services— aligns with the technical and legal provisions governing your industry. We review current legislation, prepare the necessary documentation, and design workflows that keep legal risks at bay while paving the way toward audits and certifications, freeing you to focus on growing your company.",
+        "description": "Navigating regulations can become a maze for any business. We guide you step by step so that every part of your operation (from products to services) aligns with the technical and legal provisions governing your industry. We review current legislation, prepare the necessary documentation, and design workflows that keep legal risks at bay while paving the way toward audits and certifications, freeing you to focus on growing your company.",
         "beneficios": [
           "Protection against fines and legal disputes arising from regulatory breaches.",
           "Comprehensive guidance for preparing and presenting your case before certification bodies.",
@@ -311,168 +311,419 @@
   "items": [
     {
       "name": "Custom Alternative",
-      "description": "Solution tailored to your specific needs. Contact us for a personalized quote.",
+      "description": "Solution tailored to your specific needs.",
       "services": "Solution fully adapted to the client's requirements.",
-      "features": [
-        "Personalized consulting",
-        "Custom design",
-        "Dedicated support",
-        "No-obligation quote"
-      ]
+      "features": ["Personalized consulting", "Custom design", "Dedicated support", "No-obligation quote"]
     },
     {
       "name": "Comprehensive Digital Transformation",
-      "description": "Completely renew your company's operations with intelligent digital platforms that make better use of your resources and skyrocket performance.",
-      "services": "Complete process digitization, software implementation and staff training.",
-      "features": [
-        "Priority technical support",
-        "Personalized consulting",
-        "Satisfaction guarantee",
-        "Complete documentation"
-      ]
+      "description": "Modernize all your business processes with intelligent digital solutions.",
+      "services": "Process reengineering, implementation of advanced technologies, and complete online team training for up to 4 hours.",
+      "features": ["Priority technical support", "Personalized consulting", "Satisfaction guarantee", "Complete documentation"]
     },
     {
       "name": "Innovative Product Development",
-      "description": "Turn your concepts into real products through a comprehensive development journey where scientific thinking and the most advanced technological resources work together.",
+      "description": "Turn your ideas into tangible products with our comprehensive development process.",
       "services": "Research, design and prototyping of a new product.",
-      "features": [
-        "Priority technical support",
-        "Personalized consulting",
-        "Satisfaction guarantee",
-        "Complete documentation"
-      ]
+      "features": ["Priority technical support", "Personalized consulting", "Satisfaction guarantee", "Complete documentation"]
     },
     {
       "name": "Mid-Level Technical Audit",
-      "description": "Mid-level technical review to assess the current state of your systems and processes, identifying priority improvement areas.",
-      "services": "Mid-level technical audit with detailed report and recommendations.",
-      "features": [
-        "Systems evaluation",
-        "Findings report",
-        "Practical recommendations",
-        "Basic follow-up"
-      ]
+      "description": "Mid-level technical review to assess systems and processes.",
+      "services": "Comprehensive review of processes, systems and technical documentation.",
+      "features": ["Systems evaluation", "Findings report", "Practical recommendations", "Basic follow-up"]
     },
     {
       "name": "Complete Technical Audit",
-      "description": "Closely examine your infrastructure and operational methods to uncover improvement points and ensure compliance with current regulations.",
-      "services": "Complete systems audit, detailed report and corrective action plan.",
-      "features": [
-        "Priority technical support",
-        "Personalized consulting",
-        "Satisfaction guarantee",
-        "Complete documentation"
-      ]
+      "description": "Comprehensive evaluation of systems and processes with a detailed report.",
+      "services": "Comprehensive review of processes, systems and technical documentation, with detailed report and recommendations.",
+      "features": ["Priority technical support", "Personalized consulting", "Satisfaction guarantee", "Complete documentation"]
     },
     {
       "name": "Regulatory and Compliance Consulting",
-      "description": "Specialized advisory to ensure your company complies with all technical and legal regulations applicable to your sector.",
-      "services": "Consulting on applicable regulations, diagnosis and action plan.",
-      "features": [
-        "Regulatory analysis",
-        "Compliance plan",
-        "Legal documentation",
-        "Regulatory monitoring"
-      ]
+      "description": "Advisory to comply with technical and legal regulations in your sector.",
+      "services": "Advisory to comply with sector-specific technical and legal regulations.",
+      "features": ["Regulatory analysis", "Compliance plan", "Legal documentation", "Regulatory monitoring"]
     },
     {
       "name": "Custom Software Development",
-      "description": "Creation of custom software solutions to meet your business's specific needs with modern and scalable technology.",
-      "services": "Custom software development, testing and production deployment.",
-      "features": [
-        "Full-stack development",
-        "Scalable architecture",
-        "Quality testing",
-        "Deployment and support"
-      ]
+      "description": "Creation of custom applications for analysis or simulations.",
+      "services": "Development of a custom application for analysis or simulations.",
+      "features": ["Full-stack development", "Scalable architecture", "Quality testing", "Deployment and support"]
     },
     {
       "name": "Basic Software Development",
-      "description": "Functional and efficient software solution to cover your company's essential operational needs.",
-      "services": "Software development with essential functionalities and documentation.",
-      "features": [
-        "Essential functionalities",
-        "User-friendly interface",
-        "Basic testing",
-        "User documentation"
-      ]
+      "description": "Basic application for technical analysis or simulations.",
+      "services": "Development of a basic application for technical analysis or simulations.",
+      "features": ["Essential functionalities", "User-friendly interface", "Basic testing", "User documentation"]
     },
     {
       "name": "Mid-Level System Implementation",
-      "description": "Installation and configuration of medium-complexity systems to optimize your daily operations.",
-      "services": "System implementation, configuration and team training.",
-      "features": [
-        "Complete configuration",
-        "Data migration",
-        "Initial training",
-        "Post-implementation support"
-      ]
+      "description": "Design and implementation of a mid-level quality management system.",
+      "services": "Design and implementation of a mid-level quality management system with 45 minutes of online advisory.",
+      "features": ["Complete configuration", "Data migration", "Initial training", "Post-implementation support"]
     },
     {
       "name": "Basic Quality System Implementation",
-      "description": "Start-up of a basic quality management system to standardize processes and improve results.",
-      "services": "Basic quality system implementation with manual and procedures.",
-      "features": [
-        "Quality manual",
-        "Basic procedures",
-        "Record formats",
-        "Initial audit"
-      ]
+      "description": "Start-up of a basic quality management system.",
+      "services": "Design and implementation of a basic quality management system.",
+      "features": ["Quality manual", "Basic procedures", "Record formats", "Initial audit"]
     },
     {
       "name": "Intensive Technical Training",
-      "description": "Intensive technical training program for teams that need to quickly update their skills.",
-      "services": "Intensive in-person or virtual training with support materials.",
-      "features": [
-        "Intensive sessions",
-        "Didactic material",
-        "Practical exercises",
-        "Certificate of attendance"
-      ]
+      "description": "1-day online course on specific technical topics.",
+      "services": "1-day online course on specific topics such as quality control or software development.",
+      "features": ["Intensive sessions", "Didactic material", "Practical exercises", "Certificate of attendance"]
     },
     {
       "name": "Basic Prototype Development",
-      "description": "Creation of a basic functional prototype to validate concepts and demonstrate technical feasibility.",
-      "services": "Basic prototype development with proof of concept.",
-      "features": [
-        "Conceptual design",
-        "Functional prototype",
-        "Proof of concept",
-        "Feasibility report"
-      ]
+      "description": "Creation of a basic software or technological tool prototype.",
+      "services": "Creation of a basic custom software or technological tool prototype.",
+      "features": ["Conceptual design", "Functional prototype", "Proof of concept", "Feasibility report"]
     },
     {
       "name": "Mid-Level Consulting",
-      "description": "Mid-level consulting service to resolve technical questions and receive specialized guidance.",
-      "services": "Mid-level consulting with documented analysis and recommendations.",
-      "features": [
-        "Consultation sessions",
-        "Situation analysis",
-        "Recommendations",
-        "Summary report"
-      ]
+      "description": "50-minute online advisory with analysis and suggestions.",
+      "services": "50-min online advisory, process analysis and improvement suggestions.",
+      "features": ["Consultation sessions", "Situation analysis", "Recommendations", "Summary report"]
     },
     {
       "name": "Basic Consulting",
-      "description": "Basic technical guidance to resolve specific queries and receive initial recommendations.",
-      "services": "Basic consulting with recommendations and action guide.",
-      "features": [
-        "Personalized consultation",
-        "Initial recommendations",
-        "Next steps guide",
-        "Email support"
-      ]
+      "description": "20-minute online advisory with basic suggestions.",
+      "services": "20-min online advisory, process analysis and basic improvement suggestions.",
+      "features": ["Personalized consultation", "Initial recommendations", "Next steps guide", "Email support"]
     },
     {
       "name": "Quick Analysis",
-      "description": "Quick assessment of a technical situation or problem to obtain an initial diagnosis and immediate recommendations.",
-      "services": "Quick analysis with diagnosis and recommendations within 24 hours.",
-      "features": [
-        "Express diagnosis",
-        "Brief report",
-        "Key recommendations",
-        "24h response"
+      "description": "Preliminary data review and express diagnosis.",
+      "services": "Preliminary data review and diagnosis.",
+      "features": ["Express diagnosis", "Brief report", "Key recommendations", "24h response"]
+    }
+  ]
+},
+"scratch": {
+  "title": "🎉 Scratch & Win!",
+  "subtitle": "Scratch the gray area and discover your discount!",
+  "emailLabel": "Enter your email to participate",
+  "emailPlaceholder": "you@email.com",
+  "startButton": "Start Scratching!",
+  "scratchHere": "Scratch here!",
+  "scratchHint": "Scratch with your mouse or finger!",
+  "yourCoupon": "Your coupon:",
+  "copyButton": "📋 Copy Coupon",
+  "copied": "✅ Copied!",
+  "claimButton": "Claim & Close",
+  "emailError": "Enter a valid email"
+},
+"privacy": {
+  "title": "Privacy Policy",
+  "sections": [
+    {
+      "title": "Identity and Responsibility",
+      "content1": "BADOLIA DISEÑOS S.A. DE C.V., commercially known as BITRIXA, is a Mexican business entity specialized in the convergence of science, technology, and applied innovation. Our digital laboratory Bitrixa.com.mx represents the epicenter of professional, scientific, and technical services designed to drive business development through cutting-edge methodologies.",
+      "content2": "Contact Information:",
+      "contact": [
+        "• Legal Name: BADOLIA DISEÑOS S.A. DE C.V.",
+        "• Digital Identity: Bitrixa.com.mx",
+        "• Primary Channel: informacion@bitrixa.com.mx",
+        "• Physical Location: AVENIDA INSURGENTES SUR, N°933, INT 102 PISO 1, COLONIA NAPOLES, ALCALDIA BENITO JUAREZ, C.P. 03810, CDMX"
+      ],
+      "content3": "Regulatory Ecosystem: This code operates under the Federal Law on Protection of Personal Data Held by Private Parties, its executive regulations, and the specialized guidelines of the National Institute for Transparency, Access to Information, and Personal Data Protection."
+    },
+    {
+      "title": "Personal Information Taxonomy",
+      "subsections": [
+        {
+          "heading": "Professional Identification Data",
+          "content": "We collect essential information to establish your identity in the context of our scientific and technical services: full name, government identifiers such as RFC and CURP, relevant chronological information, and geographic location data to facilitate in-person services when required."
+        },
+        {
+          "heading": "Business and Technical Information",
+          "content": "We capture data related to your organizational entity, including legal name, primary economic activity, corporate structure, tax information necessary for compliance, and technical project specifications to customize our scientific services according to your specific requirements."
+        },
+        {
+          "heading": "Digital Interaction Metadata",
+          "content": "Our systems automatically record browsing patterns, technical content preferences, download history of scientific resources, device configurations used to access our services, and engagement metrics with our specialized content."
+        },
+        {
+          "heading": "Communications and Technical Documentation",
+          "content": "We store project-related communications, technical documentation shared during consulting processes, scientific project files and specifications, progress reports and service results, as well as feedback and service satisfaction evaluations."
+        }
       ]
+    },
+    {
+      "title": "Processing Methodology and Applications",
+      "subsections": [
+        {
+          "heading": "Core Operations (Contractual Purposes)",
+          "content": "Scientific and Technical Services: We use your information to execute scientific consulting, technological development, specialized technical advisory, and innovation project management. This includes methodology customization based on your organization's technical profile and deliverable optimization according to agreed specifications. Consulting Relationship Management: We manage ongoing communication during project development, schedule deliveries and follow-ups according to established timelines, process billing and financial aspects related to contracted services, and maintain complete documentation of processes and results to ensure scientific traceability. Regulatory and Tax Compliance: We process information necessary to satisfy tax obligations, maintain records required by competent authorities, generate compliance reports when requested, and manage legal aspects related to intellectual property generated during collaborations."
+        },
+        {
+          "heading": "Value-Added Applications (Secondary Purposes)",
+          "content": "Scientific Knowledge Development: We use aggregated and anonymized data for technology trend research, development of new scientific methodologies, creation of case studies benefiting the sector, and contribution to knowledge advancement in specialized areas where we operate. Specialized Communication: We send information about relevant scientific advances in your sector, invitations to technical conferences and professional networking events, notifications about new services complementing your business profile, and educational content strengthening your organization's internal technical capabilities. Experience Personalization: We adapt our digital content according to your area of expertise, recommend services based on your project history, create customized dashboards for initiative tracking, and develop interfaces optimized for your specific workflow."
+        },
+        {
+          "heading": "Opt-Out Statement",
+          "content": "If you prefer your data not to be used for value-added applications, you may expressly notify us at informacion@bitrixa.com.mx. This decision will not compromise the quality or availability of our core services."
+        }
+      ]
+    },
+    {
+      "title": "Cookie Architecture and Cognitive Technologies",
+      "subsections": [
+        {
+          "heading": "Essential Functionality Cookies",
+          "content": "These technologies ensure the basic operation of our digital laboratory, maintaining active sessions during the use of technical tools, preserving security configurations to protect sensitive project information, and facilitating smooth navigation between different sections of our specialized services."
+        },
+        {
+          "heading": "Scientific Personalization Cookies",
+          "content": "We implement technologies that automatically adapt content according to your scientific discipline or technical area of interest, remembering technical data visualization preferences, preserving analytical tool configurations, and optimizing the presentation of complex information according to your declared specialization level."
+        },
+        {
+          "heading": "Advanced Analytics Cookies",
+          "content": "We use Google Analytics 4 specifically configured for scientific and technical environments, along with proprietary tools that analyze usage patterns of technical resources, measure consulting methodology effectiveness, identify improvement opportunities in delivery processes, and evaluate satisfaction with specialized services."
+        },
+        {
+          "heading": "Professional Engagement Cookies",
+          "content": "We implement LinkedIn Campaign Manager to reach relevant technical audiences, Google Ads targeted at science and technology professionals, and remarketing systems that present advanced scientific content to visitors with identified technical profiles."
+        }
+      ]
+    },
+    {
+      "title": "Digital Rights and Data Sovereignty",
+      "rights": [
+        {
+          "heading": "Right of Scientific Access",
+          "content": "You may request a detailed report of all personal information we process, including collection context, specific purposes of use, modification history, identification of third parties who have had access, applied security measures, and complete timeline of your data processing."
+        },
+        {
+          "heading": "Right of Technical Rectification",
+          "content": "You have the ability to update information that has changed, correct inaccurate data that may affect the quality of our services, complete missing information to improve service personalization, and modify communication and data processing preferences as your needs evolve."
+        },
+        {
+          "heading": "Right of Controlled Cancellation",
+          "content": "You may request the deletion of specific categories of personal data, the complete removal of your information from our systems, the retention only of data required by law, or the anonymization of information for statistical uses that do not allow personal identification."
+        },
+        {
+          "heading": "Right of Strategic Opposition",
+          "content": "You may object to the use of your data for specific purposes while keeping other services active, suspend commercial communications while retaining technical services, limit processing to contractual purposes only, or establish granular restrictions on specific types of processing."
+        },
+        {
+          "heading": "Right of Scientific Portability",
+          "content": "We deliver your data in industry-standard structured formats, compatible with common scientific tools, organized according to recognized technical taxonomies, and accompanied by metadata facilitating its interpretation and use in other systems."
+        },
+        {
+          "heading": "Right of Processing Limitation",
+          "content": "You may request the temporary suspension of processing while disputes about accuracy or legality are resolved, during contract or terms of service review periods, when there are pending legal proceedings, or while requests for exercising other rights are being evaluated."
+        }
+      ],
+      "procedure": {
+        "title": "Specialized Exercise Procedure",
+        "steps": [
+          { "label": "Technical Communication Channels:", "items": ["Technical Email: informacion@bitrixa.com.mx"] },
+          { "label": "Required Documentation:", "items": ["Valid official identification of the holder or legal representative", "Clear and detailed specification of the right you wish to exercise", "Precise description of the data subject to the request", "Documents proving the contractual or service relationship", "Additional documents facilitating information location"] },
+          { "label": "Response Timeline:", "items": ["Acknowledgment of receipt: approximately 2 business days", "Substantive response: 20 business days from receipt", "Request implementation: 15 business days after response", "Completion notification: 3 business days after implementation"] }
+        ]
+      }
+    },
+    {
+      "title": "Specialized Communication Channel",
+      "content": "Privacy Center of Excellence - BADOLIA DISEÑOS S.A. DE C.V. Data Protection Division – BITRIXA",
+      "email": "informacion@bitrixa.com.mx"
+    }
+  ]
+},
+"terms": {
+  "title": "Terms and Conditions",
+  "sections": [
+    {
+      "title": "Preamble",
+      "subsections": [
+        {
+          "heading": "Nature of the Digital Ecosystem",
+          "content": "BITRIXA is a digital platform specialized in the convergence of science, technology, and innovation, operated by BADOLIA DISEÑOS S.A. DE C.V., a Mexican commercial entity dedicated to the development and provision of professional, scientific, and technical services for organizations seeking to accelerate their innovation and technological development capacity."
+        },
+        {
+          "heading": "Territorial and Jurisdictional Scope",
+          "content": "These terms govern access to and use of all services, tools, content, and functionalities available through the Bitrixa.com.mx domain and any subdomain, mobile application, API, widget, or associated technology that we expressly identify as part of the BITRIXA ecosystem."
+        },
+        {
+          "heading": "Contractual Basis",
+          "content": "Access to our services implies the formation of a valid contract between you and BADOLIA DISEÑOS S.A. DE C.V., subject to applicable Mexican laws. If you act on behalf of an organization, you declare under oath that you have sufficient authority to contractually bind said entity."
+        }
+      ]
+    },
+    {
+      "title": "Classification of Scientific and Technical Services",
+      "subsections": [
+        {
+          "heading": "Scientific Consulting Services",
+          "content": "Comprehensive Technological Diagnosis: We conduct thorough evaluations of current technological capabilities, identification of gaps in innovation processes, organizational digital maturity analysis, and development of customized scientific roadmaps that optimize resources and accelerate research and development results. Specialized Methodology Development: We create customized frameworks for scientific project management, sector-specific applied research protocols, innovation impact measurement systems, and technology transfer methodologies that facilitate the practical implementation of scientific advances. Strategic Innovation Advisory: We provide specialized guidance in R&D+i strategy formulation, technical and commercial feasibility assessment of innovative projects, intellectual property management, and development of strategic alliances with academic institutions and research centers."
+        },
+        {
+          "heading": "Specialized Technological Platforms",
+          "content": "Scientific Analysis Tools: We offer access to specialized software for mathematical modeling, process simulation, advanced statistical analysis, and complex scientific data visualization that facilitates decision-making based on rigorous scientific evidence. Technical Project Management Systems: We provide integrated platforms for research project planning, scientific milestone tracking, R&D resource and budget management, and collaboration among geographically distributed multidisciplinary teams. Scientific Resource Libraries: We maintain updated repositories of industry best practices, technical case study databases, algorithm and mathematical model libraries, and collections of international standards relevant to different scientific sectors."
+        },
+        {
+          "heading": "Training and Development Services",
+          "content": "Technical Update Programs: We design and implement specialized training programs in emerging technologies, advanced scientific methodologies, data analysis tools, and innovation management techniques adapted to each organization's specific needs. Personalized Scientific Mentoring: We provide individualized support for researchers and technologists, scientific career development guidance, research project formulation advisory, and specialized coaching in technical team leadership."
+        }
+      ]
+    },
+    {
+      "title": "Eligibility Criteria and Access Conditions",
+      "subsections": [
+        {
+          "heading": "Requirements for Organizations",
+          "content": "Organizational entities wishing to access our services must have legal personality duly constituted in accordance with applicable laws in their jurisdiction, full legal capacity to contract specialized professional services, formal designation of authorized representatives for technical and financial decision-making, and current compliance with all tax and regulatory obligations."
+        },
+        {
+          "heading": "Criteria for Individual Users",
+          "content": "Individual users require legal age (18 years completed) in their jurisdiction of residence, full legal capacity without limitations affecting their ability to understand and fulfill contractual obligations, relevant technical training or professional experience to effectively leverage our specialized services, and acting on their own behalf or with duly accredited representation of third parties."
+        },
+        {
+          "heading": "Professional and Ethical Standards",
+          "content": "All users must commit to maintaining the highest standards of scientific integrity in using our services, respecting principles of intellectual honesty and transparency in communicating results, complying with applicable regulations regarding research and development in their sector, and contributing to the ethical advancement of scientific knowledge through responsible practices."
+        }
+      ]
+    },
+    {
+      "title": "Code of Conduct and Appropriate Use",
+      "subsections": [
+        {
+          "heading": "Permitted and Encouraged Activities",
+          "content": "We authorize and encourage the use of our services for legitimate advancement of scientific knowledge, development of innovative technological solutions that benefit society, ethical collaboration among researchers and organizations, application of rigorous scientific methodologies in business projects, and contribution to the innovation ecosystem through responsible sharing of learnings and best practices."
+        },
+        {
+          "heading": "Restrictions and Prohibited Activities",
+          "content": "We expressly prohibit the use of our services for activities that violate third-party intellectual property rights, development of technologies with potential for social or environmental harm without appropriate ethical assessment, manipulation or falsification of scientific data, unfair competition through misuse of privileged information obtained through our services, and any activity that contravenes fundamental ethical principles of scientific research."
+        },
+        {
+          "heading": "Responsibilities in Information Use",
+          "content": "Users assume complete responsibility for the ethical and legal use of information, tools, and services provided, including compliance with applicable regulations in their jurisdiction, adequate protection of confidential information shared during collaborations, appropriate acknowledgment of sources and contributions in derived publications or developments, and immediate notification of any inappropriate use or identified security breach."
+        }
+      ]
+    },
+    {
+      "title": "Intellectual Property Architecture",
+      "subsections": [
+        {
+          "heading": "Exclusive Rights of BADOLIA DISEÑOS",
+          "content": "We maintain exclusive and irrevocable ownership over all methodologies, algorithms, mathematical models, analytical frameworks, proprietary software tools, compiled databases, internally developed educational content, interface and user experience designs, registered trademarks and corporate identity elements, and any innovation or improvement developed in the course of service provision."
+        },
+        {
+          "heading": "Licenses Granted to Users",
+          "content": "We grant limited, non-exclusive, non-transferable, and revocable licenses to use our tools and platforms during the term of service contracts, access educational content for internal organizational use exclusively, implement provided methodologies in specific contracted projects, and use analysis results for internal business decision-making."
+        },
+        {
+          "heading": "Collaborative Ownership and Joint Developments",
+          "content": "In projects involving joint solution development, we establish specific agreements that clearly define ownership of resulting innovations, usage and commercial exploitation rights, mutual acknowledgment obligations, and dispute resolution mechanisms regarding emerging intellectual property."
+        },
+        {
+          "heading": "Client Confidential Information Protection",
+          "content": "We recognize and respect our clients' exclusive ownership over their business data, proprietary technical information, trade secrets shared during collaborations, specific results of customized projects, and any innovation developed primarily with client resources and knowledge."
+        }
+      ]
+    },
+    {
+      "title": "Liability Model and Limitations",
+      "subsections": [
+        {
+          "heading": "Obligations of BADOLIA DISEÑOS S.A. DE C.V.",
+          "content": "We commit to providing services in accordance with the highest professional industry standards, maintaining digital platform availability of 99.5% annually excluding scheduled maintenance notified in advance, assigning qualified and certified technical personnel for project execution, implementing robust security measures for confidential information protection, and delivering results conforming to agreed specifications within established timelines."
+        },
+        {
+          "heading": "User Responsibilities",
+          "content": "Users assume obligations to provide complete, accurate, and updated information necessary for effective service delivery, actively collaborate in project execution through assignment of competent personnel and adequate resources, implement recommendations according to scientific best practices, maintain confidentiality of proprietary methodologies and tools, and comply with payment terms and established contractual conditions."
+        },
+        {
+          "heading": "Liability Limitations and Scope",
+          "content": "Advisory Nature of Services: Our services constitute specialized technical advisory based on scientific knowledge and industry best practices. We do not guarantee specific results nor assume responsibility for business or technical decisions made based on our recommendations, as external variables and specific organizational factors may significantly influence final outcomes. Exclusion of Indirect Liability: BADOLIA DISEÑOS S.A. DE C.V. shall not be liable under any circumstances for indirect damages, loss of business opportunity, interruption of production processes, data loss not attributable to our systems, or consequential damages beyond the direct control of our professional services."
+        }
+      ]
+    },
+    {
+      "title": "Financial Structure and Commercial Conditions",
+      "subsections": [
+        {
+          "heading": "Differentiated Billing Models",
+          "content": "Project-Based Services: We quote specific projects through detailed analysis of scope, technical complexity, required resources, and execution timeline. Billing is structured by delivery milestones with staggered payments reflecting incremental value generated in each project phase. Scientific Consulting Retainer: For organizations requiring continuous access to technical expertise, we offer monthly retainer models that guarantee priority consultant availability, preferential access to new tools, and preferential pricing on additional projects."
+        }
+      ]
+    },
+    {
+      "title": "Jurisdiction and Applicable Law",
+      "subsections": [
+        {
+          "heading": "",
+          "content": "These terms are interpreted exclusively in accordance with Mexican federal legislation, particularly the Federal Civil Code, Federal Consumer Protection Law, and Commercial Code. The parties expressly submit to federal courts of Mexico City for non-arbitrable disputes."
+        }
+      ]
+    },
+    {
+      "title": "Contractual Evolution",
+      "subsections": [
+        {
+          "heading": "Modifications and Updates",
+          "content": "We review these terms annually to incorporate technological evolution, changes in industry best practices, regulatory updates, and user feedback on clarity and practical applicability. Substantial modifications require 45 days advance notice and a 15-day comment period."
+        }
+      ]
+    }
+  ]
+},
+"refunds": {
+  "title": "Refund Policy",
+  "guarantee": "We guarantee scientific and technical services with verifiable results.",
+  "address": "Avenida Insurgentes Sur, Nº933, Int 102, Piso 1, Colonia Nápoles, Alcaldía Benito Juárez, C.P, 03810, CDMX",
+  "phone": "+52 55 5682 4394",
+  "sections": [
+    {
+      "title": "Scientific Excellence in Customer Satisfaction",
+      "content": "At BITRIXA we are governed by the principle that every scientific and technical service must generate tangible and measurable value for our clients. Our refund policy applies only to professional services, guaranteeing transparency and fairness in cases where agreed standards are not met."
+    },
+    {
+      "title": "Scope",
+      "content": "This policy applies to services offered by BITRIXA, including but not limited to:",
+      "items": [
+        "Scientific and technical consulting.",
+        "Development of methodologies applied to R&D processes.",
+        "Technological platform services and analysis tools.",
+        "Training, certification, and scientific mentoring programs."
+      ]
+    },
+    {
+      "title": "Refund Conditions",
+      "content": "The client may request a refund only in the following cases:",
+      "numberedItems": [
+        "Breach of technical specifications documented in the contract or service proposal.",
+        "Serious deficiencies in deliverables that directly affect the usefulness of the contracted service.",
+        "Unjustified delays exceeding 40% of the agreed schedule and attributable to BITRIXA.",
+        "Persistent technical failures in platforms or tools that prevent use of the service.",
+        "Cancellation of the service by BITRIXA before its full execution."
+      ]
+    },
+    {
+      "title": "Limitations",
+      "items": [
+        "Refunds do not apply when the service has already been fully provided or entirely used by the client.",
+        "Refunds will not be granted for causes attributable to the client (lack of participation, delays in delivering information, failure to meet own technical requirements).",
+        "Certifications and accreditations issued are non-refundable once issued."
+      ]
+    },
+    {
+      "title": "Request Procedure",
+      "content": "Requests must be made in writing to informacion@bitrixa.com.mx accompanied by:",
+      "numberedItems": [
+        "Name or legal name of the contracting party.",
+        "Proof of payment and billing information.",
+        "Contracted service, dates, and agreed deliverables.",
+        "Objective evidence supporting the breach."
+      ],
+      "footer": "BITRIXA will analyze the request within 10 to 15 business days and notify the client of the resolution. If approved, the refund will be made through the same payment method used in the original transaction."
+    },
+    {
+      "title": "Final Provisions",
+      "content": "This policy takes effect upon publication and will apply to all contracts entered into after that date. BITRIXA reserves the right to modify this policy with 15 calendar days' prior notice through its official channels. The interpretation and application of this policy shall be governed by Mexican law and the corresponding jurisdiction in accordance with BITRIXA's general Terms and Conditions."
     }
   ]
 }

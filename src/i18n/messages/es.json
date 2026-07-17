@@ -53,7 +53,7 @@
       },
       {
         "title": "Asesoría en Regulación y Cumplimiento Técnico",
-        "description": "Moverse entre normativas puede volverse un laberinto para cualquier negocio. Nosotros te guiamos paso a paso para que cada parte de tu operación —desde productos hasta servicios— se ajuste a las disposiciones técnicas y legales que rigen tu industria. Revisamos la legislación actual, elaboramos la documentación necesaria y diseñamos flujos de trabajo que alejan los riesgos jurídicos y allanan el camino hacia auditorías y certificaciones, dejándote libre para concentrarte en hacer crecer tu empresa.",
+        "description": "Moverse entre normativas puede volverse un laberinto para cualquier negocio. Nosotros te guiamos paso a paso para que cada parte de tu operación (desde productos hasta servicios) se ajuste a las disposiciones técnicas y legales que rigen tu industria. Revisamos la legislación actual, elaboramos la documentación necesaria y diseñamos flujos de trabajo que alejan los riesgos jurídicos y allanan el camino hacia auditorías y certificaciones, dejándote libre para concentrarte en hacer crecer tu empresa.",
         "beneficios": [
           "Protección frente a multas y conflictos legales por faltas normativas.",
           "Orientación completa para preparar y presentar tu caso ante entes certificadores.",
@@ -311,168 +311,419 @@
   "items": [
     {
       "name": "Alternativa Personalizada",
-      "description": "Solución diseñada a la medida de tus necesidades específicas. Contáctanos para recibir una cotización personalizada.",
+      "description": "Solución diseñada a la medida de tus necesidades específicas.",
       "services": "Solución completamente adaptada a los requerimientos del cliente.",
-      "features": [
-        "Consultoría personalizada",
-        "Diseño a la medida",
-        "Soporte dedicado",
-        "Cotización sin compromiso"
-      ]
+      "features": ["Consultoría personalizada", "Diseño a la medida", "Soporte dedicado", "Cotización sin compromiso"]
     },
     {
       "name": "Transformación Digital Integral",
-      "description": "Renueva por completo el funcionamiento de tu empresa con plataformas digitales inteligentes que aprovechan mejor tus recursos y disparan el rendimiento.",
-      "services": "Digitalización completa de procesos, implementación de software y capacitación del personal.",
-      "features": [
-        "Soporte técnico prioritario",
-        "Consultoría personalizada",
-        "Garantía de satisfacción",
-        "Documentación completa"
-      ]
+      "description": "Moderniza todos tus procesos empresariales con soluciones digitales inteligentes.",
+      "services": "Reingeniería de procesos, implementación de tecnologías avanzadas y capacitación completa en línea del equipo por 4 horas máximo.",
+      "features": ["Soporte técnico prioritario", "Consultoría personalizada", "Garantía de satisfacción", "Documentación completa"]
     },
     {
       "name": "Desarrollo de Producto Innovador",
-      "description": "Materializa tus conceptos en artículos reales mediante un recorrido completo de desarrollo donde el pensamiento científico y los recursos tecnológicos más avanzados trabajan en conjunto.",
+      "description": "Transforma tus ideas en productos tangibles con nuestro proceso de desarrollo integral.",
       "services": "Investigación, diseño y prototipado de un nuevo producto.",
-      "features": [
-        "Soporte técnico prioritario",
-        "Consultoría personalizada",
-        "Garantía de satisfacción",
-        "Documentación completa"
-      ]
+      "features": ["Soporte técnico prioritario", "Consultoría personalizada", "Garantía de satisfacción", "Documentación completa"]
     },
     {
       "name": "Auditoría Técnica Media",
-      "description": "Revisión técnica de nivel medio para evaluar el estado actual de tus sistemas y procesos, identificando áreas de mejora prioritarias.",
-      "services": "Auditoría técnica de alcance medio con informe detallado y recomendaciones.",
-      "features": [
-        "Evaluación de sistemas",
-        "Informe de hallazgos",
-        "Recomendaciones prácticas",
-        "Seguimiento básico"
-      ]
+      "description": "Revisión técnica de nivel medio para evaluar sistemas y procesos.",
+      "services": "Revisión exhaustiva de procesos, sistemas y documentación técnica.",
+      "features": ["Evaluación de sistemas", "Informe de hallazgos", "Recomendaciones prácticas", "Seguimiento básico"]
     },
     {
       "name": "Auditoría Técnica Completa",
-      "description": "Examina con lupa tus infraestructuras y métodos operativos para descubrir puntos de mejora y blindar el apego a las disposiciones vigentes.",
-      "services": "Auditoría completa de sistemas, informe detallado y plan de acción correctiva.",
-      "features": [
-        "Soporte técnico prioritario",
-        "Consultoría personalizada",
-        "Garantía de satisfacción",
-        "Documentación completa"
-      ]
+      "description": "Evaluación exhaustiva de sistemas y procesos con informe detallado.",
+      "services": "Revisión exhaustiva de procesos, sistemas y documentación técnica, con informe detallado y recomendaciones.",
+      "features": ["Soporte técnico prioritario", "Consultoría personalizada", "Garantía de satisfacción", "Documentación completa"]
     },
     {
       "name": "Consultoría en Regulación y Cumplimiento",
-      "description": "Asesoría especializada para asegurar que tu empresa cumple con todas las normativas técnicas y legales aplicables a tu sector.",
-      "services": "Consultoría en regulación aplicable, diagnóstico y plan de acción.",
-      "features": [
-        "Análisis normativo",
-        "Plan de cumplimiento",
-        "Documentación legal",
-        "Seguimiento regulatorio"
-      ]
+      "description": "Asesoría para cumplir con normativas técnicas y legales del sector.",
+      "services": "Asesoría para cumplir con normativas técnicas y legales específicas del sector.",
+      "features": ["Análisis normativo", "Plan de cumplimiento", "Documentación legal", "Seguimiento regulatorio"]
     },
     {
       "name": "Desarrollo de Software a Medida",
-      "description": "Creación de soluciones de software personalizadas para cubrir necesidades específicas de tu negocio con tecnología moderna y escalable.",
-      "services": "Desarrollo de software personalizado, pruebas y despliegue en producción.",
-      "features": [
-        "Desarrollo full-stack",
-        "Arquitectura escalable",
-        "Pruebas de calidad",
-        "Despliegue y soporte"
-      ]
+      "description": "Creación de aplicaciones personalizadas para análisis o simulaciones.",
+      "services": "Desarrollo de una aplicación personalizada para análisis o simulaciones.",
+      "features": ["Desarrollo full-stack", "Arquitectura escalable", "Pruebas de calidad", "Despliegue y soporte"]
     },
     {
       "name": "Desarrollo de Software Básico",
-      "description": "Solución de software funcional y eficiente para cubrir necesidades operativas esenciales de tu empresa.",
-      "services": "Desarrollo de software con funcionalidades esenciales y documentación.",
-      "features": [
-        "Funcionalidades esenciales",
-        "Interfaz amigable",
-        "Pruebas básicas",
-        "Documentación de uso"
-      ]
+      "description": "Aplicación básica para análisis o simulaciones técnicas.",
+      "services": "Desarrollo de una aplicación básica para análisis o simulaciones técnicas.",
+      "features": ["Funcionalidades esenciales", "Interfaz amigable", "Pruebas básicas", "Documentación de uso"]
     },
     {
       "name": "Implementación de Sistema de Media",
-      "description": "Instalación y configuración de sistemas de complejidad media para optimizar tus operaciones diarias.",
-      "services": "Implementación de sistema, configuración y capacitación al equipo.",
-      "features": [
-        "Configuración completa",
-        "Migración de datos",
-        "Capacitación inicial",
-        "Soporte post-implementación"
-      ]
+      "description": "Diseño e implementación de un sistema medio de gestión de calidad.",
+      "services": "Diseño e implementación de un sistema medio de gestión de calidad con 45 minutos de asesoría en línea.",
+      "features": ["Configuración completa", "Migración de datos", "Capacitación inicial", "Soporte post-implementación"]
     },
     {
       "name": "Implementación de Sistema de Calidad Básica",
-      "description": "Puesta en marcha de un sistema de gestión de calidad básico para estandarizar procesos y mejorar resultados.",
-      "services": "Implementación de sistema de calidad básico con manual y procedimientos.",
-      "features": [
-        "Manual de calidad",
-        "Procedimientos básicos",
-        "Formatos de registro",
-        "Auditoría inicial"
-      ]
+      "description": "Puesta en marcha de un sistema básico de gestión de calidad.",
+      "services": "Diseño e implementación de un sistema básico de gestión de calidad.",
+      "features": ["Manual de calidad", "Procedimientos básicos", "Formatos de registro", "Auditoría inicial"]
     },
     {
       "name": "Capacitación Técnica Intensiva",
-      "description": "Programa intensivo de formación técnica para equipos que necesitan actualizar rápidamente sus competencias.",
-      "services": "Capacitación intensiva presencial o virtual con material de apoyo.",
-      "features": [
-        "Sesiones intensivas",
-        "Material didáctico",
-        "Ejercicios prácticos",
-        "Certificado de asistencia"
-      ]
+      "description": "Curso en línea de 1 día sobre temas técnicos específicos.",
+      "services": "Curso en línea de 1 día sobre temas específicos como control de calidad o desarrollo de software.",
+      "features": ["Sesiones intensivas", "Material didáctico", "Ejercicios prácticos", "Certificado de asistencia"]
     },
     {
       "name": "Desarrollo de Prototipo Básico",
-      "description": "Creación de un prototipo funcional básico para validar conceptos y demostrar viabilidad técnica.",
-      "services": "Desarrollo de prototipo básico con pruebas de concepto.",
-      "features": [
-        "Diseño conceptual",
-        "Prototipo funcional",
-        "Pruebas de concepto",
-        "Informe de viabilidad"
-      ]
+      "description": "Creación de un prototipo básico de software o herramienta tecnológica.",
+      "services": "Creación de un prototipo básico de software o herramienta tecnológica personalizada.",
+      "features": ["Diseño conceptual", "Prototipo funcional", "Pruebas de concepto", "Informe de viabilidad"]
     },
     {
       "name": "Consultoría Media",
-      "description": "Servicio de consultoría de alcance medio para resolver dudas técnicas y recibir orientación especializada.",
-      "services": "Consultoría de nivel medio con análisis y recomendaciones documentadas.",
-      "features": [
-        "Sesiones de consulta",
-        "Análisis de situación",
-        "Recomendaciones",
-        "Informe resumido"
-      ]
+      "description": "Asesoría en línea de 50 minutos con análisis y sugerencias.",
+      "services": "Asesoría en línea de 50 min, análisis de procesos y sugerencias de mejora.",
+      "features": ["Sesiones de consulta", "Análisis de situación", "Recomendaciones", "Informe resumido"]
     },
     {
       "name": "Consultoría Básica",
-      "description": "Orientación técnica básica para resolver consultas puntuales y recibir recomendaciones iniciales.",
-      "services": "Consultoría básica con recomendaciones y guía de acción.",
-      "features": [
-        "Consulta personalizada",
-        "Recomendaciones iniciales",
-        "Guía de siguientes pasos",
-        "Soporte por correo"
-      ]
+      "description": "Asesoría en línea de 20 minutos con sugerencias básicas.",
+      "services": "Asesoría en línea de 20 min, análisis de procesos y sugerencias básicas de mejora.",
+      "features": ["Consulta personalizada", "Recomendaciones iniciales", "Guía de siguientes pasos", "Soporte por correo"]
     },
     {
       "name": "Análisis Rápido",
-      "description": "Evaluación rápida de una situación o problema técnico para obtener un diagnóstico inicial y recomendaciones inmediatas.",
-      "services": "Análisis rápido con diagnóstico y recomendaciones en 24 horas.",
-      "features": [
-        "Diagnóstico express",
-        "Informe breve",
-        "Recomendaciones clave",
-        "Respuesta en 24h"
+      "description": "Revisión preliminar de datos y diagnóstico express.",
+      "services": "Revisión preliminar de datos y diagnóstico.",
+      "features": ["Diagnóstico express", "Informe breve", "Recomendaciones clave", "Respuesta en 24h"]
+    }
+  ]
+},
+"scratch": {
+  "title": "🎉 ¡Rasca y Gana!",
+  "subtitle": "¡Rasca el área gris y descubre tu descuento!",
+  "emailLabel": "Ingresa tu correo para participar",
+  "emailPlaceholder": "tu@email.com",
+  "startButton": "¡Empezar a rascar!",
+  "scratchHere": "¡Rasca aquí!",
+  "scratchHint": "¡Rasca con tu mouse o dedo!",
+  "yourCoupon": "Tu cupón:",
+  "copyButton": "📋 Copiar Cupón",
+  "copied": "✅ ¡Copiado!",
+  "claimButton": "Reclamar y Cerrar",
+  "emailError": "Ingresa un email válido"
+},
+"privacy": {
+  "title": "Política de Privacidad",
+  "sections": [
+    {
+      "title": "Identidad y Responsabilidad",
+      "content1": "BADOLIA DISEÑOS S.A. DE C.V., conocida comercialmente como BITRIXA, constituye una entidad empresarial mexicana especializada en la convergencia de ciencia, tecnología e innovación aplicada. Nuestro laboratorio digital Bitrixa.com.mx representa el epicentro de servicios profesionales, científicos y técnicos diseñados para impulsar el desarrollo empresarial mediante metodologías de vanguardia.",
+      "content2": "Coordenadas de Contacto:",
+      "contact": [
+        "• Denominación Social: BADOLIA DISEÑOS S.A. DE C.V.",
+        "• Identidad Digital: Bitrixa.com.mx",
+        "• Canal Principal: informacion@bitrixa.com.mx",
+        "• Ubicación Física: AVENIDA INSURGENTES SUR, N°933, INT 102 PISO 1, COLONIA NAPOLES, ALCALDIA BENITO JUAREZ, C.P. 03810, CDMX"
+      ],
+      "content3": "Ecosistema Regulatorio de Referencia: Este código opera bajo el paraguas normativo de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, su reglamento ejecutivo y las directrices especializadas del Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales."
+    },
+    {
+      "title": "Taxonomía de Información Personal",
+      "subsections": [
+        {
+          "heading": "Datos de Identificación Profesional",
+          "content": "Recopilamos información esencial que permite establecer su identidad en el contexto de nuestros servicios científicos y técnicos: denominación completa, identificadores gubernamentales como RFC y CURP, información cronológica relevante, y datos de localización geográfica que faciliten la prestación de servicios presenciales cuando sea requerido."
+        },
+        {
+          "heading": "Información Empresarial y Técnica",
+          "content": "Capturamos datos relacionados con su entidad organizacional, incluyendo razón social, actividad económica principal, estructura corporativa, información fiscal necesaria para cumplimiento tributario, y especificaciones técnicas de proyectos que permitan personalizar nuestros servicios científicos según sus requerimientos específicos."
+        },
+        {
+          "heading": "Metadatos de Interacción Digital",
+          "content": "Nuestros sistemas registran automáticamente patrones de navegación, preferencias de contenido técnico, histórico de descargas de recursos científicos, configuraciones de dispositivos utilizados para acceder a nuestros servicios, y métricas de engagement con nuestro contenido especializado."
+        },
+        {
+          "heading": "Comunicaciones y Documentación Técnica",
+          "content": "Almacenamos intercambios comunicacionales relacionados con proyectos, documentación técnica compartida durante procesos consultivos, archivos y especificaciones de proyectos científicos, reportes de avance y resultados de servicios prestados, así como feedback y evaluaciones de satisfacción de servicios."
+        }
       ]
+    },
+    {
+      "title": "Metodología de Tratamiento y Aplicaciones",
+      "subsections": [
+        {
+          "heading": "Núcleo Operativo (Finalidades Contractuales)",
+          "content": "Prestación de Servicios Científicos y Técnicos: Utilizamos su información para ejecutar servicios de consultoría científica, desarrollo tecnológico, asesoría técnica especializada, y gestión de proyectos de innovación. Esta aplicación incluye la personalización de metodologías según el perfil técnico de su organización y la optimización de entregables conforme a especificaciones acordadas. Administración de Relación Consultiva: Gestionamos la comunicación continua durante el desarrollo de proyectos, programamos entregas y seguimientos según cronogramas establecidos, procesamos facturación y aspectos financieros relacionados con servicios contratados, y mantenemos documentación completa de procesos y resultados para garantizar trazabilidad científica. Cumplimiento Regulatorio y Fiscal: Procesamos información necesaria para satisfacer obligaciones tributarias, mantenemos registros requeridos por autoridades competentes, generamos reportes de cumplimiento cuando sean solicitados, y gestionamos aspectos legales relacionados con propiedad intelectual generada durante colaboraciones."
+        },
+        {
+          "heading": "Aplicaciones de Valor Agregado (Finalidades Secundarias)",
+          "content": "Desarrollo de Conocimiento Científico: Utilizamos datos agregados y anonimizados para investigación en tendencias tecnológicas, desarrollo de nuevas metodologías científicas, creación de estudios de caso que beneficien al sector, y contribución al avance del conocimiento en áreas especializadas donde operamos. Comunicación Especializada: Enviamos información sobre avances científicos relevantes a su sector, invitaciones a conferencias técnicas y eventos de networking profesional, notificaciones sobre nuevos servicios que complementen su perfil empresarial, y contenido educativo que fortalezca capacidades técnicas internas de su organización. Personalización de Experiencia: Adaptamos nuestro contenido digital según su área de especialización, recomendamos servicios basados en su historial de proyectos, creamos tableros de control personalizados para seguimiento de iniciativas, y desarrollamos interfaces optimizadas para su flujo de trabajo específico."
+        },
+        {
+          "heading": "Manifestación de Rechazo",
+          "content": "Si prefiere que sus datos no sean utilizados para aplicaciones de valor agregado, puede comunicarlo expresamente a informacion@bitrixa.com.mx. Esta decisión no comprometerá la calidad ni disponibilidad de nuestros servicios principales."
+        }
+      ]
+    },
+    {
+      "title": "Arquitectura de Cookies y Tecnologías Cognitivas",
+      "subsections": [
+        {
+          "heading": "Cookies de Funcionalidad Esencial",
+          "content": "Estas tecnologías garantizan la operatividad básica de nuestro laboratorio digital, manteniendo sesiones activas durante el uso de herramientas técnicas, preservando configuraciones de seguridad para proteger información sensible de proyectos, y facilitando la navegación fluida entre diferentes secciones de nuestros servicios especializados."
+        },
+        {
+          "heading": "Cookies de Personalización Científica",
+          "content": "Implementamos tecnologías que adaptan automáticamente el contenido según su disciplina científica o área técnica de interés, recordando preferencias de visualización de datos técnicos, conservando configuraciones de herramientas analíticas, y optimizando la presentación de información compleja según su nivel de especialización declarado."
+        },
+        {
+          "heading": "Cookies de Analítica Avanzada",
+          "content": "Utilizamos Google Analytics 4 configurado específicamente para entornos científicos y técnicos, junto con herramientas propietarias que analizan patrones de uso de recursos técnicos, miden efectividad de metodologías de consultoría, identifican oportunidades de mejora en procesos de entrega, y evalúan satisfacción con servicios especializados."
+        },
+        {
+          "heading": "Cookies de Engagement Profesional",
+          "content": "Implementamos LinkedIn Campaign Manager para alcanzar audiencias técnicas relevantes, Google Ads orientado a profesionales en ciencia y tecnología, y sistemas de remarketing que presentan contenido científico avanzado a visitantes con perfil técnico identificado."
+        }
+      ]
+    },
+    {
+      "title": "Derechos Digitales y Soberanía de Datos",
+      "rights": [
+        {
+          "heading": "Derecho de Acceso Científico",
+          "content": "Puede solicitar un informe detallado de toda la información personal que procesamos, incluyendo contexto de recopilación, finalidades específicas de uso, historial de modificaciones, identificación de terceros que han tenido acceso, medidas de seguridad aplicadas, y cronología completa de tratamiento de sus datos."
+        },
+        {
+          "heading": "Derecho de Rectificación Técnica",
+          "content": "Tiene la facultad de actualizar información que haya cambiado, corregir datos inexactos que puedan afectar la calidad de nuestros servicios, completar información faltante que mejore la personalización de servicios, y modificar preferencias de comunicación y tratamiento de datos según evolucionen sus necesidades."
+        },
+        {
+          "heading": "Derecho de Cancelación Controlada",
+          "content": "Puede solicitar la eliminación de categorías específicas de datos personales, la eliminación total de su información de nuestros sistemas, la conservación únicamente de datos requeridos por ley, o la anonimización de información para usos estadísticos que no permitan identificación personal."
+        },
+        {
+          "heading": "Derecho de Oposición Estratégica",
+          "content": "Puede objetar el uso de sus datos para finalidades específicas manteniendo otros servicios activos, suspender comunicaciones comerciales conservando servicios técnicos, limitar el tratamiento a finalidades contractuales únicamente, o establecer restricciones granulares sobre tipos específicos de procesamiento."
+        },
+        {
+          "heading": "Derecho de Portabilidad Científica",
+          "content": "Solicitamos la entrega de sus datos en formatos estructurados estándar de la industria, compatible con herramientas científicas comunes, organizado según taxonomías técnicas reconocidas, y acompañado de metadatos que faciliten su interpretación y uso en otros sistemas."
+        },
+        {
+          "heading": "Derecho de Limitación de Tratamiento",
+          "content": "Puede solicitar la suspensión temporal del procesamiento mientras se resuelven disputas sobre exactitud o legalidad, durante períodos de revisión de contratos o términos de servicio, cuando existan procedimientos legales pendientes, o mientras se evalúan solicitudes de ejercicio de otros derechos."
+        }
+      ],
+      "procedure": {
+        "title": "Procedimiento de Ejercicio Especializado",
+        "steps": [
+          { "label": "Canales Técnicos de Comunicación:", "items": ["Email Técnico: informacion@bitrixa.com.mx"] },
+          { "label": "Documentación Requerida para Ejercicio:", "items": ["Identificación oficial vigente del titular o representante legal", "Especificación clara y detallada del derecho que desea ejercer", "Descripción precisa de los datos objeto de la solicitud", "Comprobantes que acrediten la relación contractual o de servicios", "Documentos adicionales que faciliten la localización de información"] },
+          { "label": "Cronología de Respuesta:", "items": ["Acuse de recibo: 2 días hábiles aproximadamente", "Respuesta sustantiva: 20 días hábiles desde recepción", "Implementación de solicitud: 15 días hábiles posteriores a la respuesta", "Notificación de conclusión: 3 días hábiles después de implementar"] }
+        ]
+      }
+    },
+    {
+      "title": "Canal de Comunicación Especializada",
+      "content": "Centro de Excelencia en Privacidad - BADOLIA DISEÑOS S.A. DE C.V. División de Protección de Datos – BITRIXA",
+      "email": "informacion@bitrixa.com.mx"
+    }
+  ]
+},
+"terms": {
+  "title": "Términos y Condiciones",
+  "sections": [
+    {
+      "title": "Preámbulo",
+      "subsections": [
+        {
+          "heading": "Naturaleza del Ecosistema Digital",
+          "content": "BITRIXA constituye una plataforma digital especializada en la convergencia de ciencia, tecnología e innovación, operada por BADOLIA DISEÑOS S.A. DE C.V., entidad mercantil mexicana dedicada al desarrollo y provisión de servicios profesionales, científicos y técnicos para organizaciones que buscan acelerar su capacidad de innovación y desarrollo tecnológico."
+        },
+        {
+          "heading": "Alcance Territorial y Jurisdiccional",
+          "content": "Estos términos gobiernan el acceso y uso de todos los servicios, herramientas, contenidos y funcionalidades disponibles a través del dominio Bitrixa.com.mx y cualquier subdominio, aplicación móvil, API, widget o tecnología asociada que identifiquemos expresamente como parte del ecosistema BITRIXA."
+        },
+        {
+          "heading": "Fundamento Contractual",
+          "content": "El acceso a nuestros servicios implica la formación de un contrato válido entre usted y BADOLIA DISEÑOS S.A. DE C.V., sujeto a las leyes mexicanas aplicables. Si actúa en representación de una organización, declara bajo protesta de decir verdad que cuenta con facultades suficientes para obligar contractualmente a dicha entidad."
+        }
+      ]
+    },
+    {
+      "title": "Clasificación de Servicios Científicos y Técnicos",
+      "subsections": [
+        {
+          "heading": "Servicios de Consultoría Científica",
+          "content": "Diagnóstico Tecnológico Integral: Realizamos evaluaciones comprehensivas de capacidades tecnológicas actuales, identificación de brechas en procesos de innovación, análisis de madurez digital organizacional, y desarrollo de roadmaps científicos personalizados que optimicen recursos y aceleren resultados de investigación y desarrollo. Desarrollo de Metodologías Especializadas: Creamos frameworks personalizados para gestión de proyectos científicos, protocolos de investigación aplicada específicos para cada sector, sistemas de medición de impacto de innovación, y metodologías de transferencia tecnológica que faciliten la implementación práctica de avances científicos. Asesoría en Innovación Estratégica: Proporcionamos orientación especializada en formulación de estrategias de I+D+i, evaluación de viabilidad técnica y comercial de proyectos innovadores, gestión de propiedad intelectual, y desarrollo de alianzas estratégicas con instituciones académicas y centros de investigación."
+        },
+        {
+          "heading": "Plataformas Tecnológicas Especializadas",
+          "content": "Herramientas de Análisis Científico: Ofrecemos acceso a software especializado para modelado matemático, simulación de procesos, análisis estadístico avanzado, y visualización de datos científicos complejos que faciliten la toma de decisiones basada en evidencia científica rigurosa. Sistemas de Gestión de Proyectos Técnicos: Proporcionamos plataformas integradas para planificación de proyectos de investigación, seguimiento de hitos científicos, gestión de recursos y presupuestos de I+D, y colaboración entre equipos multidisciplinarios distribuidos geográficamente. Bibliotecas de Recursos Científicos: Mantenemos repositorios actualizados de mejores prácticas industriales, bases de datos de casos de estudio técnicos, bibliotecas de algoritmos y modelos matemáticos, y colecciones de estándares internacionales relevantes para diferentes sectores científicos."
+        },
+        {
+          "heading": "Servicios de Capacitación y Desarrollo",
+          "content": "Programas de Actualización Técnica: Diseñamos e implementamos programas de capacitación especializada en tecnologías emergentes, metodologías científicas avanzadas, herramientas de análisis de datos, y técnicas de gestión de innovación adaptadas a las necesidades específicas de cada organización. Mentoring Científico Personalizado: Proporcionamos acompañamiento individualizado para investigadores y tecnólogos, orientación en desarrollo de carrera científica, asesoría en formulación de proyectos de investigación, y coaching especializado en liderazgo de equipos técnicos."
+        }
+      ]
+    },
+    {
+      "title": "Criterios de Elegibilidad y Condiciones de Acceso",
+      "subsections": [
+        {
+          "heading": "Requisitos para Organizaciones",
+          "content": "Las entidades organizacionales que deseen acceder a nuestros servicios deben contar con personalidad jurídica debidamente constituida conforme a las leyes aplicables en su jurisdicción, capacidad legal plena para contratar servicios profesionales especializados, designación formal de representantes autorizados para toma de decisiones técnicas y financieras, y cumplimiento vigente de todas sus obligaciones fiscales y regulatorias."
+        },
+        {
+          "heading": "Criterios para Usuarios Individuales",
+          "content": "Los usuarios individuales requieren mayoría de edad legal (18 años cumplidos) en su jurisdicción de residencia, capacidad de ejercicio plena sin limitaciones que afecten su habilidad para comprender y cumplir obligaciones contractuales, formación técnica o experiencia profesional relevante para aprovechar efectivamente nuestros servicios especializados, y actuación en nombre propio o con representación debidamente acreditada de terceros."
+        },
+        {
+          "heading": "Estándares Profesionales y Éticos",
+          "content": "Todos los usuarios deben comprometerse a mantener los más altos estándares de integridad científica en el uso de nuestros servicios, respetar principios de honestidad intelectual y transparencia en comunicación de resultados, cumplir con regulaciones aplicables en materia de investigación y desarrollo en su sector, y contribuir al avance ético del conocimiento científico mediante prácticas responsables."
+        }
+      ]
+    },
+    {
+      "title": "Código de Conducta y Uso Apropiado",
+      "subsections": [
+        {
+          "heading": "Actividades Permitidas y Fomentadas",
+          "content": "Autorizamos y fomentamos el uso de nuestros servicios para avance legítimo del conocimiento científico, desarrollo de soluciones tecnológicas innovadoras que beneficien a la sociedad, colaboración ética entre investigadores y organizaciones, aplicación de metodologías científicas rigurosas en proyectos empresariales, y contribución al ecosistema de innovación mediante sharing responsable de aprendizajes y mejores prácticas."
+        },
+        {
+          "heading": "Restricciones y Actividades Prohibidas",
+          "content": "Prohibimos expresamente el uso de nuestros servicios para actividades que vulneren derechos de propiedad intelectual de terceros, desarrollo de tecnologías con potencial de daño social o ambiental sin evaluación ética apropiada, manipulación o falsificación de datos científicos, competencia desleal mediante uso indebido de información privilegiada obtenida a través de nuestros servicios, y cualquier actividad que contravenga principios éticos fundamentales de la investigación científica."
+        },
+        {
+          "heading": "Responsabilidades en el Uso de Información",
+          "content": "Los usuarios asumen responsabilidad completa por el uso ético y legal de información, herramientas y servicios proporcionados, incluyendo cumplimiento de regulaciones aplicables en su jurisdicción, protección adecuada de información confidencial compartida durante colaboraciones, reconocimiento apropiado de fuentes y contribuciones en publicaciones o desarrollos derivados, y notificación inmediata de cualquier uso inadecuado o breach de seguridad identificado."
+        }
+      ]
+    },
+    {
+      "title": "Arquitectura de Propiedad Intelectual",
+      "subsections": [
+        {
+          "heading": "Derechos Exclusivos de BADOLIA DISEÑOS",
+          "content": "Mantenemos propiedad exclusiva e irrevocable sobre todas las metodologías, algoritmos, modelos matemáticos, frameworks analíticos, herramientas de software propietario, bases de datos compiladas, contenido educativo desarrollado internamente, diseños de interfaces y experiencia de usuario, marcas registradas y elementos de identidad corporativa, y cualquier innovación o mejora desarrollada en el curso de prestación de servicios."
+        },
+        {
+          "heading": "Licencias Otorgadas a Usuarios",
+          "content": "Concedemos licencias limitadas, no exclusivas, intransferibles y revocables para utilizar nuestras herramientas y plataformas durante la vigencia de contratos de servicios, acceder a contenido educativo para uso interno organizacional exclusivamente, implementar metodologías proporcionadas en proyectos específicos contratados, y utilizar resultados de análisis para toma de decisiones empresariales internas."
+        },
+        {
+          "heading": "Propiedad Colaborativa y Desarrollos Conjuntos",
+          "content": "En proyectos que involucren desarrollo conjunto de soluciones, establecemos acuerdos específicos que definen claramente la titularidad de innovaciones resultantes, derechos de uso y explotación comercial, obligaciones de reconocimiento mutuo, y mecanismos de resolución de disputas sobre propiedad intelectual emergente."
+        },
+        {
+          "heading": "Protección de Información Confidencial del Cliente",
+          "content": "Reconocemos y respetamos la propiedad exclusiva de nuestros clientes sobre sus datos empresariales, información técnica propietaria, secretos comerciales compartidos durante colaboraciones, resultados específicos de proyectos customizados, y cualquier innovación desarrollada principalmente con recursos y conocimiento del cliente."
+        }
+      ]
+    },
+    {
+      "title": "Modelo de Responsabilidades y Limitaciones",
+      "subsections": [
+        {
+          "heading": "Obligaciones de BADOLIA DISEÑOS S.A. DE C.V.",
+          "content": "Nos comprometemos a proporcionar servicios conforme a los más altos estándares profesionales de la industria, mantener disponibilidad de plataformas digitales del 99.5% anual excluyendo mantenimientos programados notificados anticipadamente, asignar personal técnico calificado y certificado para ejecución de proyectos, implementar medidas de seguridad robustas para protección de información confidencial, y entregar resultados conformes a especificaciones acordadas dentro de cronogramas establecidos."
+        },
+        {
+          "heading": "Responsabilidades del Usuario",
+          "content": "Los usuarios asumen obligaciones de proporcionar información completa, precisa y actualizada necesaria para prestación efectiva de servicios, colaborar activamente en ejecución de proyectos mediante asignación de personal competente y recursos adecuados, implementar recomendaciones conforme a mejores prácticas científicas, mantener confidencialidad de metodologías y herramientas propietarias, y cumplir con términos de pago y condiciones contractuales establecidas."
+        },
+        {
+          "heading": "Limitaciones de Responsabilidad y Alcance",
+          "content": "Naturaleza Consultiva de Servicios: Nuestros servicios constituyen asesoría técnica especializada basada en conocimiento científico y mejores prácticas industriales. No garantizamos resultados específicos ni asumimos responsabilidad por decisiones empresariales o técnicas adoptadas basándose en nuestras recomendaciones, dado que variables externas y factores organizacionales específicos pueden influir significativamente en outcomes finales. Exclusión de Responsabilidad Indirecta: BADOLIA DISEÑOS S.A. DE C.V. no será responsable bajo ninguna circunstancia por daños indirectos, pérdidas de oportunidad comercial, interrupción de procesos productivos, pérdida de datos no atribuible a nuestros sistemas, o daños consecuenciales que excedan el control directo de nuestros servicios profesionales."
+        }
+      ]
+    },
+    {
+      "title": "Estructura Financiera y Condiciones Comerciales",
+      "subsections": [
+        {
+          "heading": "Modelos de Facturación Diferenciados",
+          "content": "Servicios por Proyecto: Cotizamos proyectos específicos mediante análisis detallado de alcance, complejidad técnica, recursos requeridos, y timeline de ejecución. La facturación se estructura por hitos de entrega con pagos escalonados que reflejen valor incremental generado en cada fase del proyecto. Retainer de Consultoría Científica: Para organizaciones que requieren acceso continuo a expertise técnico, ofrecemos modelos de retainer mensual que garantizan disponibilidad prioritaria de consultores, acceso preferencial a nuevas herramientas, y pricing preferencial en proyectos adicionales."
+        }
+      ]
+    },
+    {
+      "title": "Jurisdicción y Ley Aplicable",
+      "subsections": [
+        {
+          "heading": "",
+          "content": "Estos términos se interpretan exclusivamente conforme a legislación federal mexicana, particularmente Código Civil Federal, Ley Federal de Protección al Consumidor y Código de Comercio. Las partes se someten expresamente a tribunales federales de la Ciudad de México para controversias no arbitrables."
+        }
+      ]
+    },
+    {
+      "title": "Evolución Contractual",
+      "subsections": [
+        {
+          "heading": "Modificaciones y Actualizaciones",
+          "content": "Revisamos estos términos anualmente para incorporar evolución tecnológica, cambios en mejores prácticas de la industria, actualizaciones regulatorias, y feedback de usuarios sobre claridad y aplicabilidad práctica. Modificaciones sustanciales requieren notificación con 45 días de anticipación y período de comentarios de 15 días."
+        }
+      ]
+    }
+  ]
+},
+"refunds": {
+  "title": "Política de Reembolsos",
+  "guarantee": "Garantizamos servicios científicos y técnicos con resultados verificables.",
+  "address": "Avenida Insurgentes Sur, Nº933, Int 102, Piso 1, Colonia Nápoles, Alcaldía Benito Juárez, C.P, 03810, CDMX",
+  "phone": "+52 55 5682 4394",
+  "sections": [
+    {
+      "title": "Excelencia Científica en Satisfacción del Cliente",
+      "content": "En BITRIXA nos regimos por el principio de que todo servicio científico y técnico debe generar valor tangible y medible para nuestros clientes. Nuestra política de reembolsos aplica únicamente a servicios profesionales, garantizando transparencia y equidad en los casos en que no se cumplan los estándares pactados."
+    },
+    {
+      "title": "Alcance",
+      "content": "Esta política aplica a los servicios ofrecidos por BITRIXA, incluyendo, de manera enunciativa más no limitativa:",
+      "items": [
+        "Consultoría científica y técnica.",
+        "Desarrollo de metodologías aplicadas a procesos de I+D.",
+        "Servicios de plataformas tecnológicas y herramientas de análisis.",
+        "Programas de capacitación, certificación y mentoring científico."
+      ]
+    },
+    {
+      "title": "Condiciones de Reembolso",
+      "content": "El cliente podrá solicitar un reembolso únicamente en los siguientes supuestos:",
+      "numberedItems": [
+        "Incumplimiento de especificaciones técnicas documentadas en contrato o propuesta de servicios.",
+        "Deficiencias graves en los entregables que afecten de manera directa la utilidad del servicio contratado.",
+        "Retrasos injustificados superiores al 40% del cronograma pactado y atribuibles a BITRIXA.",
+        "Fallas técnicas persistentes en plataformas o herramientas que impidan el uso del servicio.",
+        "Cancelación del servicio por parte de BITRIXA antes de su ejecución total."
+      ]
+    },
+    {
+      "title": "Limitaciones",
+      "items": [
+        "No aplican reembolsos cuando el servicio ya haya sido prestado en su totalidad o utilizado íntegramente por el cliente.",
+        "No se otorgarán reembolsos por causas atribuibles al cliente (falta de participación, retrasos en entrega de información, incumplimiento de requisitos técnicos propios).",
+        "Certificaciones y acreditaciones emitidas no son reembolsables una vez expedidas."
+      ]
+    },
+    {
+      "title": "Procedimiento de Solicitud",
+      "content": "Las solicitudes deberán realizarse por escrito al correo informacion@bitrixa.com.mx acompañadas de:",
+      "numberedItems": [
+        "Nombre o razón social del contratante.",
+        "Comprobante de pago y datos de facturación.",
+        "Servicio contratado, fechas y entregables pactados.",
+        "Evidencia objetiva que sustente el incumplimiento."
+      ],
+      "footer": "BITRIXA analizará la solicitud en un plazo de 10 a 15 días hábiles y notificará al cliente la resolución. En caso de proceder, el reembolso se realizará mediante el mismo método de pago utilizado en la transacción original."
+    },
+    {
+      "title": "Disposiciones Finales",
+      "content": "Esta política entra en vigor a partir de su publicación y se aplicará a todas las contrataciones posteriores a dicha fecha. BITRIXA se reserva el derecho de modificar esta política con previo aviso de 15 días naturales a través de sus canales oficiales. La interpretación y aplicación de esta política se regirá por la legislación mexicana y la jurisdicción que corresponda conforme a los Términos y Condiciones generales de BITRIXA."
     }
   ]
 }

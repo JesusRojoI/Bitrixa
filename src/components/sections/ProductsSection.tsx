@@ -12,19 +12,16 @@ import toast from 'react-hot-toast';
 // 2. Transformación Digital Integral
 // 3. Desarrollo de Producto Innovador
 
+
 const productSlugs = [
-  'alternativa-personalizada',
-  'transformacion-digital-integral',
   'desarrollo-de-producto-innovador',
+  'transformacion-digital-integral',
+  'auditoria-tecnica-completa',
 ];
 
-const productPrices = [0, 29479.00, 40439.00];
-const productImages = [
-  'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80',
-  '/i6.jpg',
-  '/i5.jpg',
-];
-const productIds = ['prod-1', 'prod-2', 'prod-3'];
+const productPrices = [40439.00, 29479.00, 24479.00];
+const productImages = ['/i5.jpg', '/i6.jpg', '/i7.jpg'];
+const productIds = ['prod-3', 'prod-2', 'prod-5'];
 
 const ProductsSection = () => {
   const t = useTranslations('products');
@@ -39,10 +36,10 @@ const ProductsSection = () => {
   // Mapear: translationIndex → nombre traducido
   // prod-1 → index 0, prod-2 → index 1, prod-3 → index 2
   const featuredNames = [
-    allProductNames[0]?.name || 'Alternativa Personalizada',
-    allProductNames[1]?.name || 'Transformación Digital Integral',
-    allProductNames[2]?.name || 'Desarrollo de Producto Innovador',
-  ];
+  allProductNames[2]?.name || 'Desarrollo de Producto Innovador',
+  allProductNames[1]?.name || 'Transformación Digital Integral',
+  allProductNames[4]?.name || 'Auditoría Técnica Completa',
+];
 
   const handleAddToCart = (index: number) => {
     const productName = featuredNames[index];
